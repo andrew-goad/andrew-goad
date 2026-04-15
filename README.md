@@ -6,7 +6,7 @@
 
 ---
 
-### 👨‍💻 Github Portfolio Summary: Full Enterprise Lifecycle
+### 👨‍💻 Github System Architecture Overview: Full Enterprise Lifecycle
 
 1. [Data Integrity - Python](https://github.com/andrew-goad/forensic-data-integrity) (Gatekeeper Engine)
 2. [Signal Detection - SAS](https://github.com/andrew-goad/enterprise-reconciliation-reporting) (Reconciliation Engine)
