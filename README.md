@@ -6,6 +6,17 @@
 
 ---
 
+### 👨‍💻 Github Portfolio Summary: Full Enterprise Lifecycle
+
+1. [Data Integrity - Python](https://github.com/andrew-goad/forensic-data-integrity) (Gatekeeper Engine)
+2. [Signal Detection - SAS](https://github.com/andrew-goad/enterprise-reconciliation-reporting) (Reconciliation Engine)
+3. [Decision Simulation - SQL](https://github.com/andrew-goad/metro2-remediation-sandbox) (Remediation Sandbox)
+4. [Liability Quantification - SAS](https://github.com/andrew-goad/insurance-coverage-reconciliation) (Insurance Engine)
+5. [Financial Impact Modeling - SAS](https://github.com/andrew-goad/financial-tvm-optimization) (TVM Engine)
+6. [Growth Strategy Optimization - Python](https://github.com/andrew-goad/survival-retention-engine) (Survival Engine)
+
+---
+
 ### 🚀 Selected Career Highlights
 
 #### **$1B+ Forensic Impact Analysis (CPI)**
