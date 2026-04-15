@@ -1,6 +1,8 @@
 # Senior Data Science & Analytics Leader | Principal Architect for $1B+ Remediations & Federal Consent Order Execution | Forensic Data Engineering | Strategic Management Advisor | Board Ready Insights | “No Cold Handoffs”
 
-I am a **Principal Data Strategist and Senior Data Science Leader** with **16 years** of experience engineering high-fidelity analytical solutions for mission-critical challenges. While my background includes navigating $1B+ mandates and federal regulatory closures, my core expertise lies in transforming volatile, high-risk data environments into automated, defensible frameworks that support sustainable growth. I architect zero-defect, audit-ready pipelines that **distill** and translate millions of rows of complex, dense data into actionable insights for the C-Suite and stakeholders at every level.
+**Principal Data Strategist and Senior Data Science Leader** with **16 years** of experience architecting enterprise-scale decision systems for mission-critical challenges. While my background includes navigating $1B+ mandates and federal regulatory closures, my core expertise lies in designing end-to-end systems that ensure data integrity, simulate and validate high-stakes decisions, quantify financial impact, and **drive growth outcomes.** I architect audit-ready pipelines that translate complex data into actionable, board-ready insights for the C-Suite and stakeholders at every level.
+
+[LinkedIn Profile](www.linkedin.com/in/andrewrgoad)
 
 ---
 
