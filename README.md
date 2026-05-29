@@ -8,26 +8,26 @@
 
 ## 👨‍💻 GitHub System Architecture Overview: Full Enterprise Lifecycle
 
-1. [Data Integrity - Python](https://github.com/andrew-goad/forensic-data-integrity)  
-   **Forensic Gatekeeper Engine** — Python-driven diagnostic engine for detecting forensic anomalies, quantifying dataset integrity, automating pipeline trust, and eliminating technical debt before downstream models or executive reporting rely on corrupted inputs.
+1. [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy)  
+   **Enterprise Credit Decisioning Strategy Simulator** — Governed PostgreSQL credit decisioning simulator for synthetic applications, pre-production strategy testing, matched comparison, counteroffer governance, and Expected Loss tradeoffs without PII.
 
-2. [Signal Detection - SAS](https://github.com/andrew-goad/enterprise-reconciliation-reporting)  
-   **Automated Audit Governance Engine** — machine-learning reconciliation framework that moves enterprise data integrity from manual discrepancy hunting to automated audit governance, filtering synthetic noise and isolating true exceptions across high-volume reconciliation cycles.
+2. [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity)  
+   **Universal Data Integrity: The Forensic Gatekeeper Engine** — Python-driven diagnostic engine for automating pipeline trust, detecting forensic anomalies, assigning an integrity score, and eliminating technical debt before downstream models or executive reporting rely on corrupted inputs.
 
-3. [Credit Decisioning Strategy - PostgreSQL](https://github.com/andrew-goad/credit_decisioning_strategy)  
-   **Credit Decisioning Strategy Simulator** — governed synthetic application generation, scenario testing, strategy decisioning, matched comparison, counteroffer governance, and Expected Loss tradeoff simulation without PII.
+3. [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting)  
+   **Machine Learning Reconciliation: Automated Audit Governance** — SAS-based reconciliation and audit governance engine that filters enterprise-scale ingestion noise, isolates true exceptions, compresses false flags, and converts discrepancy hunting into prioritized risk mitigation.
 
-4. [Decision Simulation - PostgreSQL](https://github.com/andrew-goad/metro2-remediation-sandbox)  
-   **Metro 2 Remediation Sandbox** — synthetic longitudinal tradeline generator and dynamic impact resolution engine for simulating high-stakes credit reporting repair strategies with audit-ready before-and-after reporting.
+4. [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox)  
+   **Metro 2 Remediation Sandbox: Synthetic Portfolio & Impact Engine** — Modular PostgreSQL sandbox for simulating high-stakes credit reporting repair strategies through a synthetic longitudinal tradeline generator, dynamic impact resolution engine, and audit-ready before-and-after reporting.
 
-5. [Liability Quantification - SAS](https://github.com/andrew-goad/insurance-coverage-reconciliation)  
-   **Insurance Audit & Liability Cost Signal** — metadata-driven SAS architecture for automating complex insurance policy adjustments, comparing overlapping proof-of-coverage windows, and translating raw reconciliation data into an executive liability signal.
+5. [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation)  
+   **Regulatory-Grade Insurance Audit & Liability Cost Signal** — Metadata-driven SAS architecture for automating complex insurance policy adjustments, comparing overlapping proof-of-coverage windows, and translating raw reconciliation data into an executive liability signal.
 
-6. [Financial Impact Modeling - SAS](https://github.com/andrew-goad/financial-tvm-optimization)  
-   **TVM Remediation Liability Engine** — high-performance SAS engine using PROC FCMP and in-memory 2D arrays to transform remediation data intake into time-value-of-money adjusted executive cost signals and program-level liability forecasts.
+6. [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization)  
+   **Executive TVM Cost Signal for Remediation** — High-performance SAS engine using PROC FCMP, in-memory 2D arrays, and Treasury-rate logic to convert dense remediation data into time-value-of-money adjusted cost signals and program-level liability forecasts.
 
-7. [Growth Strategy Optimization - Python](https://github.com/andrew-goad/survival-retention-engine)  
-   **Predictive Growth Engineering Suite** — survival architecture combining Cox Proportional Hazards, K-Means persona mapping, and automated audit defense to quantify customer runway, defend LTV, and shift retention strategy from reactive dashboards to proactive growth engineering.
+7. [survival-retention-engine](https://github.com/andrew-goad/survival-retention-engine)  
+   **Predictive Growth Engineering: LTV Expansion & Survival Architecture** — Python survival architecture combining Cox Proportional Hazards, K-Means persona mapping, automated audit defense, and executive storytelling to quantify customer runway, defend LTV, and shift retention strategy from reactive dashboards to proactive growth engineering.
 
 ---
 
