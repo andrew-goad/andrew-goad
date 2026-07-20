@@ -42,7 +42,7 @@ My public portfolio demonstrates how those professional disciplines translate in
 | **Enterprise scale** | $1B+ exposure and customer-impact programs; 500+ cross-business submissions; 100M+ account-month actions |
 | **Operating leadership** | Led analytical workstreams across 15+ remediations; advised or peer reviewed 10+ additional credit-reporting efforts |
 | **Federal credit analytics** | Supported 16 OCC economists and examination teams |
-| **Technical portfolio** | Seven governed systems built across SAS, Python, and PostgreSQL |
+| **Technical portfolio** | Seven governed systems across SAS, Python, and PostgreSQL, plus an interactive Power BI release-validation layer |
 | **Core philosophy** | Transparent logic, traceable evidence, controlled execution, and no cold handoffs |
 
 ---
@@ -75,7 +75,7 @@ I connect requirements, methodology, population logic, code, validation evidence
 
 This GitHub portfolio is a public proof layer for **enterprise data strategy, governed analytics, and decision-system architecture**.
 
-The repositories are not isolated notebooks or dashboard demonstrations. Each independently developed system pairs code with some combination of:
+The repositories are not isolated notebooks or dashboard-only demonstrations. Each independently developed system pairs code with some combination of:
 
 - business and analytical requirements
 - controlled parameters and strategy configurations
@@ -86,6 +86,7 @@ The repositories are not isolated notebooks or dashboard demonstrations. Each in
 - reason-code and decision-path evidence
 - run registries and archive tables
 - executive summaries and presentations
+- interactive Power BI reports connecting executive KPIs to application-level validation evidence
 - technical runbooks and operating guidance
 
 The repository organization reflects the professional documentation and version-control discipline I used at Wells Fargo.
@@ -124,7 +125,7 @@ Governed Inputs
 
 | # | Repository | Primary Stack | Demonstrates |
 |---:|---|---|---|
-| 1 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL | Credit-policy simulation, Expected Loss, counteroffers, matched challenger comparison, and strategy governance |
+| 1 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Credit-policy simulation, matched release validation, DAX-driven executive and application analysis, counteroffers, and strategy governance |
 | 2 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
 | 3 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
 | 4 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
@@ -138,9 +139,9 @@ Governed Inputs
 
 ### 1. [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy)
 
-**Enterprise Credit Decisioning Strategy Simulator — PostgreSQL**
+**Enterprise Credit Decisioning Strategy Simulator — PostgreSQL + Power BI**
 
-Governed simulator for generated application populations, estimated PD, LGD, Expected Loss, affordability, exposure, counteroffer, review, approval, and decline logic.
+Governed simulator for generated application populations, estimated-PD proxy behavior, LGD, comparative Expected Loss, affordability, exposure, counteroffers, reviews, approvals, and declines. The PostgreSQL decisioning environment is complemented by an interactive Power BI release-validation layer that reconciles 50,000 matched Module 1 V1.0 and V2.0 applications and connects portfolio conclusions to application-level evidence.
 
 Demonstrates:
 
@@ -154,6 +155,12 @@ Demonstrates:
 - strategy-frontier analysis
 - archive-backed evidence
 - post-campaign acceptance testing
+- Power Query ingestion, data-type remediation, release merging, and row-level change logic
+- relational Power BI semantic modeling with full-population and changed-detail fact tables
+- centralized DAX measures with governed KPI denominators
+- executive release-summary reporting and application-level impact exploration
+- conditional formatting, interactive application lookup, and dynamic analyst narratives
+- source-to-report reconciliation against independent SAS validation evidence
 
 ---
 
@@ -287,7 +294,7 @@ Demonstrates survival modeling, scenario-based risk reduction, segmentation, and
 
 [View the repository](https://github.com/andrew-goad/credit_decisioning_strategy)
 
-A two-module PostgreSQL decisioning environment demonstrating how generated application data, policy controls, strategy testing, account-level outcomes, validation evidence, and executive interpretation can operate together without exposing PII or proprietary credit policy.
+A two-module decisioning environment with a PostgreSQL simulation core, SAS reconciliation evidence, and an interactive Power BI release-validation layer. The project demonstrates how generated application data, policy controls, strategy testing, account-level outcomes, validation evidence, and executive interpretation can operate together without exposing PII or proprietary credit policy.
 
 ### Module 1 — Application and Risk Engine
 
@@ -312,6 +319,39 @@ Generates deterministic application populations with:
 - product-by-score risk surfaces
 - configurable scenario levers
 - Expected-Loss impact decomposition
+
+### Power BI Release-Validation Layer
+
+I implemented the automated reporting and validation layer contemplated in the Module 1 roadmap using Power BI Desktop.
+
+The report integrates final PostgreSQL-generated V1.0 and V2.0 application outputs with independent SAS reconciliation evidence. It preserves the complete 50,000-application denominator and reconciles:
+
+- **50,000** matched applications
+- **21,326** applications with one or more functional changes
+- **28,674** unaffected applications
+- **42.65%** application change rate
+- **58,382** application-variable change records
+- **7** changed functional variables
+
+The Power BI implementation demonstrates:
+
+- Power Query ingestion and controlled data typing
+- one-to-one V1.0-to-V2.0 release merging
+- row-level delta and change-flag calculations
+- relational semantic modeling
+- one-to-many relationship governance
+- centralized DAX measures
+- KPI and denominator validation
+- executive report design
+- interactive Application ID lookup
+- application-level V1.0-versus-V2.0 reconciliation
+- conditional formatting
+- dynamic DAX-based analyst interpretation
+
+[![Module 1 Power BI Executive Summary](https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png)](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png)
+
+[View the Release Impact Explorer](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_impact_explorer.png) ·
+[Download the Power BI report](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/Module1_V1_V2_Release_Validation.pbix)
 
 ### Module 2 — Credit Policy and Decision Strategy Engine
 
@@ -352,6 +392,8 @@ The repository includes:
 - run registries
 - archive persistence
 - executive summaries
+- interactive Power BI release-validation reporting
+- application-level reconciliation and dynamic analyst interpretation
 - technical runbooks
 
 ### Why the Project Matters
@@ -368,8 +410,10 @@ The simulator demonstrates:
 - challenger-strategy assessment
 - counteroffer governance
 - executive decision support
+- cross-platform lineage from PostgreSQL outputs and SAS controls to Power BI evidence
+- executive-to-application traceability through interactive release-impact analysis
 
-It is not a dashboard-only demonstration. It is a complete decision-system environment with relational implementation, controlled parameters, generated samples, validation evidence, archived campaign results, and executive reporting.
+It is not a dashboard-only demonstration. It is a complete decision-system environment with relational implementation, controlled parameters, generated samples, independent reconciliation, validation evidence, archived campaign results, and an interactive Power BI consumption layer connecting executive conclusions to application-level evidence.
 
 ---
 
@@ -524,7 +568,7 @@ Selected experience includes:
 
 ### Portfolio Platforms and Libraries
 
-`PostgreSQL` · `pandas` · `NumPy` · `scikit-learn` · `lifelines` · `matplotlib` · `openpyxl` · `python-pptx` · `ReportLab` · `Relational Data Modeling` · `Archive and Evidence Tables`
+`PostgreSQL` · `Power BI Desktop` · `Power Query` · `DAX` · `Power BI Semantic Modeling` · `Interactive Report Design` · `pandas` · `NumPy` · `scikit-learn` · `lifelines` · `matplotlib` · `openpyxl` · `python-pptx` · `ReportLab` · `Relational Data Modeling` · `Archive and Evidence Tables`
 
 ### Modeling and Decision Science
 
