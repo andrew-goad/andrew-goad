@@ -24,7 +24,7 @@ At Wells Fargo, I was promoted from Vice President to Executive Director while s
 
 At the OCC, I supported 16 economists and examination teams with longitudinal consumer-credit data, survival and logistic modeling, CECL and life-of-loan PD analysis, credit benchmarking, alternative-data engineering, and published research support.
 
-My public portfolio demonstrates how those professional disciplines translate into proactive credit strategy, enterprise data governance, model and decision validation, reconciliation, remediation testing, and executive-ready analytical evidence.
+My public portfolio demonstrates how those professional disciplines translate into enterprise credit strategy, governed decision systems, survival modeling, forensic data quality, reconciliation, regulatory remediation, model and data validation, and executive-ready analytical evidence.
 
 [LinkedIn Profile](https://www.linkedin.com/in/andrewrgoad) ·
 [Repository Map](#repository-map) ·
@@ -42,7 +42,7 @@ My public portfolio demonstrates how those professional disciplines translate in
 | **Enterprise scale** | $1B+ exposure and customer-impact programs; 500+ cross-business submissions; 100M+ account-month actions |
 | **Operating leadership** | Led analytical workstreams across 15+ remediations; advised or peer reviewed 10+ additional credit-reporting efforts |
 | **Federal credit analytics** | Supported 16 OCC economists and examination teams |
-| **Technical portfolio** | Seven governed systems across SAS, Python, and PostgreSQL, plus an interactive Power BI release-validation layer |
+| **Technical portfolio** | Seven governed systems across SAS, SQL/PostgreSQL, Python, and Power BI, supported by enterprise architectures, BRDs, validation summaries, and generated stakeholder evidence |
 | **Core philosophy** | Transparent logic, traceable evidence, controlled execution, and no cold handoffs |
 
 ---
@@ -57,9 +57,13 @@ I integrate fragmented data, independently managed processes, and cross-function
 
 I design transparent rule, strategy, and treatment frameworks with configurable parameters, account-level outcomes, reason codes, monitoring, and archived evidence.
 
+### Applied Data Science and Time-to-Event Analytics
+
+I develop interpretable analytical frameworks that connect segmentation, survival and hazard modeling, scenario design, cross-validation, calibration, model diagnostics, and stakeholder evidence.
+
 ### Model and Data Validation
 
-I apply independent recalculation, challenger and benchmark analysis, source-to-target reconciliation, sensitivity testing, UAT, exception management, and effective challenge.
+I apply independent recalculation, challenger and benchmark analysis, source-to-target reconciliation, sensitivity testing, UAT, exception management, model diagnostics, and effective challenge.
 
 ### Executive Decision Support
 
@@ -73,14 +77,15 @@ I connect requirements, methodology, population logic, code, validation evidence
 
 ## Portfolio Mission
 
-This GitHub portfolio is a public proof layer for **enterprise data strategy, governed analytics, and decision-system architecture**.
+This GitHub portfolio is a public proof layer for **enterprise data strategy, governed analytics, applied data science, and decision-system architecture**.
 
 The repositories are not isolated notebooks or dashboard-only demonstrations. Each independently developed system pairs code with some combination of:
 
+- enterprise architecture and code-flow documentation
 - business and analytical requirements
 - controlled parameters and strategy configurations
 - synthetic, anonymized, or demonstration data
-- QA and validation evidence
+- BRDs, validation summaries, and QA evidence
 - reconciliation and exception outputs
 - UAT scripts and acceptance checks
 - reason-code and decision-path evidence
@@ -98,10 +103,10 @@ The repository organization reflects the professional documentation and version-
 ```text
 Business Context and Decision Requirements
 → Data Fitness, Lineage, and Reconciliation
-→ Model, Policy, or Strategy Development
+→ Model, Policy, Strategy, or Scenario Development
 → Scenario, Sensitivity, and Challenger Testing
 → Decision or Treatment Execution
-→ Financial and Customer-Impact Quantification
+→ Risk, Financial, Customer, or Lifecycle Impact Quantification
 → Validation, Monitoring, and Exception Management
 → Executive Narrative and Governed Follow-Through
 ```
@@ -125,13 +130,13 @@ Governed Inputs
 
 | # | Repository | Primary Stack | Demonstrates |
 |---:|---|---|---|
-| 1 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Credit-policy simulation, matched release validation, DAX-driven executive and application analysis, counteroffers, and strategy governance |
-| 2 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
-| 3 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
-| 4 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
-| 5 | [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation) | SAS | Coverage-interval reconciliation, lapse rules, adjustment factors, and customer-impact evidence |
-| 6 | [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization) | SAS | Treasury-indexed financial redress, custom functions, chunked processing, and liability evidence |
-| 7 | [survival-retention-engine](https://github.com/andrew-goad/survival-retention-engine) | Python | CoxPH, Kaplan-Meier, segmentation, scenario analysis, and automated executive reporting |
+| 1 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Governed credit-policy simulation, counteroffers, matched comparison, Expected Loss tradeoffs, Power BI release validation, and executive-to-application evidence |
+| 2 | [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework) | Python | K-Means personas, regularized CoxPH, cross-validation, calibration, same-cohort simulation, dependency-safe feature rebuilding, and automated stakeholder evidence |
+| 3 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
+| 4 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
+| 5 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
+| 6 | [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation) | SAS | Coverage-interval reconciliation, lapse rules, adjustment factors, and customer-impact evidence |
+| 7 | [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization) | SAS | Treasury-indexed financial redress, custom functions, chunked processing, and liability evidence |
 
 ---
 
@@ -141,7 +146,7 @@ Governed Inputs
 
 **Enterprise Credit Decisioning Strategy Simulator — PostgreSQL + Power BI**
 
-Governed simulator for generated application populations, estimated-PD proxy behavior, LGD, comparative Expected Loss, affordability, exposure, counteroffers, reviews, approvals, and declines. The PostgreSQL decisioning environment is complemented by an interactive Power BI release-validation layer that reconciles 50,000 matched Module 1 V1.0 and V2.0 applications and connects portfolio conclusions to application-level evidence.
+Governed two-module decisioning environment for synthetic application populations, estimated-PD proxy behavior, LGD, comparative Expected Loss, affordability, exposure, counteroffers, reviews, approvals, and declines.
 
 Demonstrates:
 
@@ -153,18 +158,53 @@ Demonstrates:
 - counteroffer feasibility and governance
 - reason-code and decision-path traceability
 - strategy-frontier analysis
-- archive-backed evidence
-- post-campaign acceptance testing
+- archive-backed evidence and post-campaign acceptance
 - Power Query ingestion, data-type remediation, release merging, and row-level change logic
-- relational Power BI semantic modeling with full-population and changed-detail fact tables
+- relational Power BI semantic modeling
 - centralized DAX measures with governed KPI denominators
 - executive release-summary reporting and application-level impact exploration
-- conditional formatting, interactive application lookup, and dynamic analyst narratives
-- source-to-report reconciliation against independent SAS validation evidence
+- source-to-report reconciliation against independent SAS evidence
+- publication-quality enterprise architecture spanning source staging, strategy controls, decision logic, final outcomes, governance, and reuse
 
 ---
 
-### 2. [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity)
+### 2. [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework)
+
+**Survival Strategy Framework — Python**
+
+Governed time-to-event analytical framework that carries survival modeling from validated input contracts through persona discovery, regularized Cox proportional hazards modeling, risk stratification, same-cohort scenario simulation, and automated stakeholder evidence.
+
+Demonstrates:
+
+- deterministic synthetic retention data
+- binary event and right-censoring support
+- governed duration, event, ID, feature, and scenario contracts
+- K-Means persona discovery and multi-seed stability review
+- regularized CoxPH modeling
+- stratified five-fold cross-validation
+- out-of-fold survival calibration and Brier evidence
+- raw and multiplicity-adjusted proportional-hazards diagnostics
+- scaled Schoenfeld residual review and sensitivity analysis
+- model-derived high-risk cohort selection
+- neutral control, favorable improvement, combined, and adverse stress scenarios
+- same-cohort re-scoring with identical governed IDs
+- dependency-safe interaction and squared-term rebuilding
+- predicted survival comparison
+- immutable run evidence, executive PowerPoint, and technical PDF generation
+
+Validated demonstration:
+
+- 7,500 synthetic records
+- 2,964 observed events
+- 1,875 governed target-cohort records
+- six controlled scenarios
+- five-fold mean concordance of 0.827
+- three stable descriptive personas
+- final acceptance posture of `PASS_WITH_REVIEW`
+
+---
+
+### 3. [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity)
 
 **Forensic Data Integrity Gatekeeper — Python**
 
@@ -185,7 +225,7 @@ Produces audit ledgers, executive scorecards, and validation-ready handoff evide
 
 ---
 
-### 3. [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting)
+### 4. [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting)
 
 **Enterprise Reconciliation Reporting — SAS**
 
@@ -207,7 +247,7 @@ Designed to reduce false positives while preserving reproducible and reviewable 
 
 ---
 
-### 4. [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox)
+### 5. [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox)
 
 **Metro 2 Remediation Sandbox — PostgreSQL**
 
@@ -229,7 +269,7 @@ Demonstrates governed remediation testing, temporal state management, and explai
 
 ---
 
-### 5. [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation)
+### 6. [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation)
 
 **Insurance Coverage Reconciliation — SAS**
 
@@ -248,7 +288,7 @@ Demonstrates:
 
 ---
 
-### 6. [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization)
+### 7. [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization)
 
 **Treasury-Indexed Remediation Liability Engine — SAS**
 
@@ -269,32 +309,17 @@ Demonstrates scalable financial-redress calculation while controlling processing
 
 ---
 
-### 7. [survival-retention-engine](https://github.com/andrew-goad/survival-retention-engine)
-
-**Survival Retention and Scenario Engine — Python**
-
-End-to-end time-to-event modeling and scenario-analysis framework.
-
-Combines:
-
-- K-Means personas
-- Kaplan-Meier curves
-- Cox proportional hazards
-- customer and segment risk analysis
-- high-risk scenario simulation
-- time-to-event runway
-- automated PPTX and PDF reporting
-- technical and executive model evidence
-
-Demonstrates survival modeling, scenario-based risk reduction, segmentation, and interpretable analytical reporting.
-
----
-
 ## Featured Build: Enterprise Credit Decisioning Strategy Simulator
 
 [View the repository](https://github.com/andrew-goad/credit_decisioning_strategy)
 
+[![Enterprise Credit Decisioning Strategy Module 2 Architecture](https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/main/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png)](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png)
+
+[Open the Module 2 enterprise architecture full size](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png)
+
 A two-module decisioning environment with a PostgreSQL simulation core, SAS reconciliation evidence, and an interactive Power BI release-validation layer. The project demonstrates how generated application data, policy controls, strategy testing, account-level outcomes, validation evidence, and executive interpretation can operate together without exposing PII or proprietary credit policy.
+
+The Module 2 architecture makes the full strategy chain visible—from the Module 1 source population through strategy controls, decision logic, final outcomes, archive persistence, matched comparison, QA, frontier analysis, and evidence acceptance.
 
 ### Module 1 — Application and Risk Engine
 
@@ -414,6 +439,73 @@ The simulator demonstrates:
 - executive-to-application traceability through interactive release-impact analysis
 
 It is not a dashboard-only demonstration. It is a complete decision-system environment with relational implementation, controlled parameters, generated samples, independent reconciliation, validation evidence, archived campaign results, and an interactive Power BI consumption layer connecting executive conclusions to application-level evidence.
+
+---
+
+## Featured Modeling Build: Survival Strategy Framework
+
+[View the repository](https://github.com/andrew-goad/survival-strategy-framework)
+
+[![Enterprise Survival Strategy Framework Architecture](https://raw.githubusercontent.com/andrew-goad/survival-strategy-framework/main/docs/Enterprise%20Survival%20Strategy%20Framework%20Architecture.png)](https://github.com/andrew-goad/survival-strategy-framework/blob/main/docs/Enterprise%20Survival%20Strategy%20Framework%20Architecture.png)
+
+[Open the enterprise survival architecture full size](https://github.com/andrew-goad/survival-strategy-framework/blob/main/docs/Enterprise%20Survival%20Strategy%20Framework%20Architecture.png)
+
+A governed Python time-to-event analytical system that separates descriptive persona discovery from Cox proportional hazards modeling and carries the work through validation, risk targeting, same-cohort scenario simulation, dependency reconstruction, stakeholder reporting, and immutable run evidence.
+
+### Validated Analytical Flow
+
+```text
+Synthetic Time-to-Event Data
+→ Input Contract Validation
+→ K-Means Persona Discovery
+→ Regularized CoxPH Model
+→ Five-Fold Cross-Validation
+→ Out-of-Fold Calibration
+→ Proportional-Hazards Review
+→ Population Risk Stratification
+→ Top-Quartile Target Cohort
+→ Control / Improvement / Stress Scenarios
+→ Dependency-Safe Re-Scoring
+→ Predicted Survival Comparison
+→ Executive PPTX + Technical PDF
+→ Run Registry and Acceptance Evidence
+```
+
+### Validated Demonstration
+
+- **7,500** synthetic records
+- **2,964** observed events
+- **4,536** right-censored records
+- **12** governed CoxPH features
+- **0.827** five-fold mean concordance
+- **3** stable descriptive personas
+- **1,875** governed target-cohort records
+- **6** control, improvement, combined, and stress scenarios
+- **`PASS_WITH_REVIEW`** acceptance posture with documented PH sensitivity evidence
+
+### Same-Cohort Scenario Evidence
+
+[![Same-Cohort Baseline and Scenario Survival](https://raw.githubusercontent.com/andrew-goad/survival-strategy-framework/main/outputs/baseline_vs_scenario_survival.png)](https://github.com/andrew-goad/survival-strategy-framework/blob/main/outputs/baseline_vs_scenario_survival.png)
+
+[Open the same-cohort survival chart full size](https://github.com/andrew-goad/survival-strategy-framework/blob/main/outputs/baseline_vs_scenario_survival.png)
+
+The scenario framework holds the same target IDs constant, applies bounded assumptions, rebuilds interaction and squared terms, re-scores the cohort, and compares modeled partial hazard and survival movement.
+
+The project demonstrates:
+
+- time-to-event modeling with right-censoring
+- K-Means lifecycle personas
+- regularized Cox proportional hazards
+- five-fold validation and out-of-fold calibration
+- model-derived risk tiers
+- neutral control and adverse stress testing
+- same-cohort sensitivity analysis
+- engineered-feature dependency controls
+- PH diagnostics and sensitivity review
+- automated executive and technical evidence
+- explicit non-causal and non-production boundaries
+
+The objective is not merely to fit a survival model. It is to build a governed analytical framework in which the model, validation, scenario assumptions, evidence, and interpretation remain connected.
 
 ---
 
@@ -572,11 +664,11 @@ Selected experience includes:
 
 ### Modeling and Decision Science
 
-`Cox Proportional Hazards` · `Kaplan-Meier` · `Discrete-Time Survival and Hazard Models` · `Binary and Multinomial Logistic Regression` · `Ordinary Least Squares` · `K-Means` · `Probability of Default` · `Loss Given Default` · `Expected Loss` · `CECL` · `Life-of-Loan PD` · `Scenario and Sensitivity Analysis` · `Policy-Rule Simulation` · `Champion/Challenger Comparison` · `Strategy-Frontier Analysis`
+`Cox Proportional Hazards` · `Kaplan-Meier` · `Discrete-Time Survival and Hazard Models` · `Binary and Multinomial Logistic Regression` · `Ordinary Least Squares` · `K-Means` · `Probability of Default` · `Loss Given Default` · `Expected Loss` · `CECL` · `Life-of-Loan PD` · `Cross-Validation` · `Out-of-Fold Calibration` · `Proportional-Hazards Diagnostics` · `Scenario and Sensitivity Analysis` · `Policy-Rule Simulation` · `Champion/Challenger Comparison` · `Strategy-Frontier Analysis`
 
 ### Validation and Governance
 
-`Independent Recalculation` · `Benchmark and Challenger Analysis` · `Matched-Population Comparison` · `Source-to-Target Reconciliation` · `Data Quality and Lineage Review` · `UAT and Acceptance Testing` · `Reasonableness and Sensitivity Testing` · `Monitoring and Exception Management` · `Documentation Standards` · `Effective Challenge` · `Executive Decision Evidence`
+`Independent Recalculation` · `Benchmark and Challenger Analysis` · `Matched-Population Comparison` · `Source-to-Target Reconciliation` · `Data Quality and Lineage Review` · `UAT and Acceptance Testing` · `Reasonableness and Sensitivity Testing` · `Model Diagnostics` · `Calibration Review` · `Dependency Synchronization` · `Monitoring and Exception Management` · `Documentation Standards` · `Effective Challenge` · `Executive Decision Evidence`
 
 ### Enterprise Data Strategy and Operating Models
 
@@ -584,7 +676,7 @@ Selected experience includes:
 
 ### Domain Experience
 
-`Consumer Credit Risk` · `Auto Finance` · `Credit-Bureau and Metro 2 Furnishing` · `FCRA` · `CECL` · `PD/LGD/Expected Loss` · `CPI` · `SCRA` · `Loss Mitigation` · `Syndicated Credit` · `Federal Bank Supervision` · `Remediation and Customer-Impact Analytics`
+`Consumer Credit Risk` · `Auto Finance` · `Credit-Bureau and Metro 2 Furnishing` · `FCRA` · `CECL` · `PD/LGD/Expected Loss` · `Customer Retention and Lifecycle Analytics` · `CPI` · `SCRA` · `Loss Mitigation` · `Syndicated Credit` · `Federal Bank Supervision` · `Remediation and Customer-Impact Analytics`
 
 ---
 
@@ -659,6 +751,6 @@ The repositories are designed to demonstrate transferable methodology, enterpris
 - [LinkedIn](https://www.linkedin.com/in/andrewrgoad)
 - [GitHub](https://github.com/andrew-goad)
 
-> **Analytics • Decision Systems • Consumer Credit**
+> **Analytics • Applied Data Science • Decision Systems • Consumer Credit**
 >
 > **Logic, controls, validation, evidence, and interpretation travel together.**
