@@ -2,7 +2,7 @@
 
 ## Senior Analytics & Applied Data Science Leader
 
-**Enterprise Data Strategy & Decision Systems | Consumer Credit & Risk Analytics | Data Governance & Model Validation**
+**Enterprise Data Strategy & Decision Systems | Consumer Credit | Governance & Validation**
 
 > **No Cold Handoffs:** Logic, controls, validation, evidence, and interpretation travel together.
 
@@ -24,12 +24,71 @@ At Wells Fargo, I was promoted from Vice President to Executive Director while s
 
 At the OCC, I supported 16 economists and examination teams with longitudinal consumer-credit data, survival and logistic modeling, CECL and life-of-loan PD analysis, credit benchmarking, alternative-data engineering, and published research support.
 
-My public portfolio demonstrates how those professional disciplines translate into enterprise credit strategy, governed decision systems, survival modeling, forensic data quality, reconciliation, regulatory remediation, model and data validation, and executive-ready analytical evidence.
+My public portfolio demonstrates how those professional disciplines translate into merchant-financing strategy, enterprise credit decisioning, survival modeling, forensic data quality, reconciliation, regulatory remediation, model and data validation, and executive-ready analytical evidence.
 
-[LinkedIn Profile](https://www.linkedin.com/in/andrewrgoad) ·
+[Featured Build](#featured-build-merchant-sales-based-financing-strategy-simulator) ·
 [Repository Map](#repository-map) ·
 [Professional Foundation](#professional-foundation) ·
-[Technical Toolkit](#technical-toolkit)
+[Technical Toolkit](#technical-toolkit) ·
+[LinkedIn](https://www.linkedin.com/in/andrewrgoad)
+
+---
+
+## Featured Build: Merchant Sales-Based Financing Strategy Simulator
+
+[View the repository](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator)
+
+[![Enterprise Merchant Sales-Based Financing Platform](https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform.png)](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform.png)
+
+[Open the enterprise architecture full size](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform.png) ·
+[Open the executive strategy brief](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/From_First_Advance_to_Intelligent_Portfolio.pdf) ·
+[Review the Module 1 lineage](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Module_1_Governed_Evidence_Contract_and_Acceptance_Lineage.png)
+
+> **Module 1 complete · `G2_M1_CONTRACT = PASS` · Module 2 Strategy & Offer Decisioning authorized**
+
+A deterministic, synthetic, PostgreSQL 15 enterprise platform for merchant sales-based financing tied to daily point-of-sale activity and sales-linked repayment. The build starts before application—with acquisition source, campaign, touchpoint, attribution, and merchant-acquisition-cost evidence—and progresses through daily operating intelligence, capacity, resilience, integrated risk, exposure, comparative loss, unit economics, immutable consumption contracts, and formal G2 certification.
+
+```text
+Acquisition Source & Campaign
+→ Touchpoints & Attribution
+→ Application & Requested Structure
+→ Daily POS, Settlement, Deposit & Liquidity Evidence
+→ Cash-Flow, Capacity & Operating Resilience
+→ Integrated Risk, Exposure, Recovery & Comparative Loss
+→ Unit Economics & Merchant Acquisition Cost
+→ Latest / Archive / Comparison Contracts
+→ End-to-End G2 Assurance
+→ Module 2 Strategy & Offer Decisioning
+```
+
+### Accepted Module 1 / G2 Evidence
+
+| Release fact | Accepted result |
+|---|---:|
+| Governed progression | G0, G1, and M1.2–M1.17 |
+| Designed data foundation | 110 parent/control/reference tables; 2,138 designed columns |
+| Applications and matched scenarios | 750 applications across `BASELINE` and `RECESSION_ENERGY` |
+| Integrated consumption boundary | 1,500 application-scenario rows |
+| Accepted hash chain | 18 / 18 PASS |
+| Final positive controls | 128 / 128 PASS |
+| Final negative controls | 20 / 20 PASS |
+| Deterministic and archive mismatches | 0 |
+| Final contract gate | **`G2_M1_CONTRACT = PASS`** |
+
+### What the Platform Demonstrates
+
+- deterministic merchant, owner, processor, application, POS, settlement, deposit, and liquidity foundations
+- governed acquisition-source taxonomy, campaign funnels, application touchpoints, deterministic attribution, and merchant CAC
+- explicit separation of data confidence, verification evidence, fraud risk, processor continuity, cash-flow behavior, capacity, resilience, integrated risk, loss, and economics
+- matched baseline and adverse-scenario analysis using the same applications and governed scenario identities
+- transparent EAD, recovery/LGD, comparative-loss, unit-economics, capital-charge, and risk-adjusted-contribution foundations
+- immutable latest/archive/comparison contracts with independent physical-field hash reconstruction
+- fail-closed recovery, positive and negative controls, formal sign-offs, manifests, and SHA-256 evidence
+- executive strategy, enterprise architecture, controlled public samples, and a reproducible downstream-consumption boundary
+
+[Review M1.16 acquisition attribution and CAC](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/Module_1/1.16_Acquisition_Attribution_and_CAC) ·
+[Review M1.17 G2 assurance](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/Module_1/1.17_End_to_End_QA_and_G2_Acceptance) ·
+[Open the artifact map](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/PROJECT_ARTIFACT_MAP.md)
 
 ---
 
@@ -42,7 +101,7 @@ My public portfolio demonstrates how those professional disciplines translate in
 | **Enterprise scale** | $1B+ exposure and customer-impact programs; 500+ cross-business submissions; 100M+ account-month actions |
 | **Operating leadership** | Led analytical workstreams across 15+ remediations; advised or peer reviewed 10+ additional credit-reporting efforts |
 | **Federal credit analytics** | Supported 16 OCC economists and examination teams |
-| **Technical portfolio** | Seven governed systems across SAS, SQL/PostgreSQL, Python, and Power BI, supported by enterprise architectures, BRDs, validation summaries, and generated stakeholder evidence |
+| **Technical portfolio** | Eight governed systems across SAS, SQL/PostgreSQL, Python, and Power BI, supported by enterprise architectures, BRDs, validation summaries, and generated stakeholder evidence |
 | **Core philosophy** | Transparent logic, traceable evidence, controlled execution, and no cold handoffs |
 
 ---
@@ -89,7 +148,8 @@ The repositories are not isolated notebooks or dashboard-only demonstrations. Ea
 - reconciliation and exception outputs
 - UAT scripts and acceptance checks
 - reason-code and decision-path evidence
-- run registries and archive tables
+- run registries, immutable archives, and certified consumption contracts
+- acquisition-source, attribution, merchant-CAC, and unit-economics evidence
 - executive summaries and presentations
 - interactive Power BI reports connecting executive KPIs to application-level validation evidence
 - technical runbooks and operating guidance
@@ -130,19 +190,53 @@ Governed Inputs
 
 | # | Repository | Primary Stack | Demonstrates |
 |---:|---|---|---|
-| 1 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Governed credit-policy simulation, counteroffers, matched comparison, Expected Loss tradeoffs, Power BI release validation, and executive-to-application evidence |
-| 2 | [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework) | Python | K-Means personas, regularized CoxPH, cross-validation, calibration, same-cohort simulation, dependency-safe feature rebuilding, and automated stakeholder evidence |
-| 3 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
-| 4 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
-| 5 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
-| 6 | [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation) | SAS | Coverage-interval reconciliation, lapse rules, adjustment factors, and customer-impact evidence |
-| 7 | [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization) | SAS | Treasury-indexed financial redress, custom functions, chunked processing, and liability evidence |
+| 1 | [merchant-sales-based-financing-strategy-simulator](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator) | PostgreSQL | Merchant acquisition attribution, daily POS and liquidity evidence, risk/loss foundations, unit economics, immutable contracts, and G2 assurance |
+| 2 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Governed credit-policy simulation, counteroffers, matched comparison, Expected Loss tradeoffs, Power BI release validation, and executive-to-application evidence |
+| 3 | [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework) | Python | K-Means personas, regularized CoxPH, cross-validation, calibration, same-cohort simulation, dependency-safe feature rebuilding, and automated stakeholder evidence |
+| 4 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
+| 5 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
+| 6 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
+| 7 | [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation) | SAS | Coverage-interval reconciliation, lapse rules, adjustment factors, and customer-impact evidence |
+| 8 | [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization) | SAS | Treasury-indexed financial redress, custom functions, chunked processing, and liability evidence |
 
 ---
 
 ## Portfolio Systems
 
-### 1. [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy)
+### 1. [merchant-sales-based-financing-strategy-simulator](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator)
+
+**Merchant Sales-Based Financing Strategy Simulator — PostgreSQL**
+
+Governed enterprise platform for merchant financing tied to daily POS activity and sales-linked repayment. The project develops a complete Module 1 evidence and consumption foundation before authorizing offer strategy.
+
+Demonstrates:
+
+- 750 deterministic merchants and applications across two matched scenarios
+- daily POS, settlement, deposit, liquidity, exposure, and repayment evidence
+- source confidence, verification, fraud, and processor-continuity controls
+- cash-flow features, obligations, residual capacity, archetypes, and operating resilience
+- integrated merchant-risk, EAD, recovery/LGD, comparative-loss, and unit-economics foundations
+- acquisition-source profiles, campaign funnels, touchpoints, deterministic attribution, and merchant CAC
+- explicit control of overlap between legacy acquisition cost and enhanced cost evidence
+- latest, immutable archive, matched comparison, and acquisition companion contracts
+- 18-of-18 accepted hash-chain identities
+- 128 positive controls and 20 negative controls at the final G2 boundary
+- zero deterministic mismatches, archive violations, prohibited PII columns, or premature Module 2 rows
+- executive strategy, enterprise architecture, detailed lineage, public review cohort, and formal acceptance evidence
+
+Accepted Module 1 progression:
+
+```text
+G0 + G1
+→ M1.2 through M1.16
+→ M1.17 End-to-End QA & Evidence
+→ G2_M1_CONTRACT = PASS
+→ Module 2 Strategy & Offer Decisioning authorized
+```
+
+---
+
+### 2. [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy)
 
 **Enterprise Credit Decisioning Strategy Simulator — PostgreSQL + Power BI**
 
@@ -168,7 +262,7 @@ Demonstrates:
 
 ---
 
-### 2. [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework)
+### 3. [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework)
 
 **Survival Strategy Framework — Python**
 
@@ -204,7 +298,7 @@ Validated demonstration:
 
 ---
 
-### 3. [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity)
+### 4. [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity)
 
 **Forensic Data Integrity Gatekeeper — Python**
 
@@ -225,7 +319,7 @@ Produces audit ledgers, executive scorecards, and validation-ready handoff evide
 
 ---
 
-### 4. [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting)
+### 5. [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting)
 
 **Enterprise Reconciliation Reporting — SAS**
 
@@ -247,7 +341,7 @@ Designed to reduce false positives while preserving reproducible and reviewable 
 
 ---
 
-### 5. [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox)
+### 6. [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox)
 
 **Metro 2 Remediation Sandbox — PostgreSQL**
 
@@ -269,7 +363,7 @@ Demonstrates governed remediation testing, temporal state management, and explai
 
 ---
 
-### 6. [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation)
+### 7. [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation)
 
 **Insurance Coverage Reconciliation — SAS**
 
@@ -288,7 +382,7 @@ Demonstrates:
 
 ---
 
-### 7. [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization)
+### 8. [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization)
 
 **Treasury-Indexed Remediation Liability Engine — SAS**
 
@@ -656,7 +750,7 @@ Selected experience includes:
 
 ### Professional Engineering and Analytics
 
-`SAS Enterprise Guide` · `SAS Macro Programming` · `PROC SQL` · `PROC FCMP` · `SQL` · `Teradata` · `Python` · `Git/GitHub` · `Tableau` · `ArcGIS` · `Excel/VBA` · `Microsoft Access` · `JavaScript/HTML` · `PuTTY Batch Processing` · `SharePoint` · `Jira` · `PowerPoint`
+`SAS Enterprise Guide` · `SAS Macro Programming` · `PROC SQL` · `PROC FCMP` · `SQL` · `Teradata` · `PostgreSQL` · `DBeaver` · `Python` · `Git/GitHub` · `Tableau` · `ArcGIS` · `Excel/VBA` · `Microsoft Access` · `JavaScript/HTML` · `PuTTY Batch Processing` · `SharePoint` · `Jira` · `PowerPoint`
 
 ### Portfolio Platforms and Libraries
 
@@ -676,7 +770,7 @@ Selected experience includes:
 
 ### Domain Experience
 
-`Consumer Credit Risk` · `Auto Finance` · `Credit-Bureau and Metro 2 Furnishing` · `FCRA` · `CECL` · `PD/LGD/Expected Loss` · `Customer Retention and Lifecycle Analytics` · `CPI` · `SCRA` · `Loss Mitigation` · `Syndicated Credit` · `Federal Bank Supervision` · `Remediation and Customer-Impact Analytics`
+`Consumer Credit Risk` · `Merchant Sales-Based Financing` · `POS and Settlement Analytics` · `Acquisition Attribution and Merchant CAC` · `Unit Economics` · `Auto Finance` · `Credit-Bureau and Metro 2 Furnishing` · `FCRA` · `CECL` · `PD/LGD/Expected Loss` · `Customer Retention and Lifecycle Analytics` · `CPI` · `SCRA` · `Loss Mitigation` · `Syndicated Credit` · `Federal Bank Supervision` · `Remediation and Customer-Impact Analytics`
 
 ---
 
@@ -750,6 +844,7 @@ The repositories are designed to demonstrate transferable methodology, enterpris
 
 - [LinkedIn](https://www.linkedin.com/in/andrewrgoad)
 - [GitHub](https://github.com/andrew-goad)
+- [Merchant Sales-Based Financing Strategy Simulator](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator)
 
 > **Analytics • Applied Data Science • Decision Systems • Consumer Credit**
 >
