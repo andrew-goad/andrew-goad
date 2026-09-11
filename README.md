@@ -4,7 +4,7 @@
 
 **I build analytical products that turn complex data into decisions people can understand, test and carry into the next operational step.**
 
-My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau, including promotion from Vice President to Executive Director at Wells Fargo. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing explanation available to inspect.
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau, including promotion from Vice President to Executive Director at Wells Fargo. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
