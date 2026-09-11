@@ -1,819 +1,230 @@
 # Andrew R. Goad
 
-## Senior Analytics & Applied Data Science Leader | Decision Systems | Consumer Credit
+### Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit
 
-**Enterprise Data Strategy · Governed Analytics · Model & Data Validation · Executive Advisory**
+**I build analytical products that turn complex data into decisions people can understand, test and carry into the next operational step.**
 
-**Lexington, South Carolina** ·
-[LinkedIn](https://www.linkedin.com/in/andrewrgoad) ·
-[GitHub](https://github.com/andrew-goad)
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau, including promotion from Vice President to Executive Director at Wells Fargo. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing explanation available to inspect.
 
-> **No Cold Handoffs:** Logic, controls, validation, evidence, and interpretation travel together.
+> **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
-Senior analytics and applied data science leader with **16+ years of experience**
-across Wells Fargo, the Office of the Comptroller of the Currency, and the
-U.S. Census Bureau.
+[LinkedIn][linkedin] · [Featured work](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
-I combine hands-on **SAS, SQL, Python, PostgreSQL, longitudinal consumer-credit
-analytics, and applied data science** with enterprise data strategy, governed
-decision systems, model and data validation, and executive advisory leadership.
-My work connects business and regulatory requirements to source-data lineage,
-analytical methodology, decision logic, implementation controls, monitoring,
-exception evidence, and controlled operational follow-through.
+**Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
 
-At Wells Fargo, I was promoted from Vice President to Executive Director while
-serving as principal analytical architect for Consumer Auto programs exceeding
-**$1B in exposure and customer impact**. My experience includes CPI
-analytical-system governance from **2018–2025**, leadership across **15+
-additional remediations**, and enterprise controls spanning **500+ submissions**
-and **100M+ account-month furnishing actions**.
+<a name="featured-work"></a>
+## Featured analytical products
 
-At the OCC, I supported **16 economists and examination teams** with
-longitudinal consumer-credit data, survival and logistic modeling, life-of-loan
-PD and CECL analysis, credit benchmarking, alternative-data engineering, and
-published research support. Earlier, I modernized federal statistical
-production and validation at the U.S. Census Bureau.
+*Independent, synthetic, non-production demonstrations. Screenshots open in the browser; the linked Power BI files open in Power BI Desktop—not as hosted live dashboards.*
 
-My public portfolio demonstrates how those disciplines translate into
-merchant-financing strategy, enterprise credit decisioning, survival modeling,
-forensic data quality, reconciliation, regulatory remediation, model and data
-validation, Power BI release assurance, and executive-ready analytical
-evidence.
+<a name="msbf"></a>
+### MSBF · Merchant Credit Intelligence
 
-[Featured MSBF Platform](#featured-build-merchant-sales-based-financing-strategy-simulator) ·
-[Other Flagship Builds](#other-flagship-builds) ·
-[Repository Map](#repository-map) ·
-[Professional Foundation](#professional-foundation) ·
-[Technical Toolkit](#technical-toolkit) ·
-[Connect](#connect)
+**What financing can a merchant support, why, and what happens after funding?**  
+PostgreSQL · Python · Power BI
 
----
+I designed and published a merchant-financing product demonstration connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
 
-## Career at a Glance
+<a name="msbf-power-bi"></a>
+#### Power BI: explain the decision—and follow the account
 
-| Dimension | Evidence |
-|---|---|
-| **Experience** | 16+ years across Wells Fargo, the OCC, and the U.S. Census Bureau |
-| **Leadership progression** | Promoted from Vice President to Executive Director at Wells Fargo |
-| **Enterprise scale** | $1B+ exposure and customer-impact programs; 500+ cross-business submissions; 100M+ account-month furnishing actions |
-| **Operating leadership** | Led analytical workstreams across 15+ remediations; served as SME or peer reviewer on 10+ additional credit-reporting matters |
-| **Federal credit analytics** | Supported 16 OCC economists and examination teams; built and validated panels spanning 875,516 loans and 2,363,261 loan-year observations |
-| **Public portfolio** | Eight governed systems across PostgreSQL, SAS, Python, and Power BI, supported by architectures, requirements, validation, runbooks, evidence, and executive narratives |
-| **Core philosophy** | Transparent logic, traceable evidence, controlled execution, and no cold handoffs |
+**P03 Application Journey** joins merchant backstory, operating evidence, risk/economics and decision narratives to remittance, monitoring and servicing for funded paths. The narratives preserve source-engine rationale; Power BI explains the decision rather than making it.
 
----
+[![MSBF P03: synthetic merchant 738 in Baseline, with operating evidence, financing rationale and the funded account's performance, monitoring and servicing.][msbf-p03-image]][msbf-p03]
 
-## What I Build
+*Original P03 view, merchant 738 / Baseline. Risk/loss fields are current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss**—not calibrated lending risk or realized profit. Activity after the 23 July 2026 source cutoff is synthetic-forward through 22 November 2026. [Open full resolution][msbf-p03].*
 
-### Enterprise Data Strategy
+The four-page application connects **cohort context → performance over time → individual merchant explanation → servicing and attention**. Industry, acquisition-source, scenario and date controls let a reviewer move from the portfolio to the account behind it.
 
-I integrate fragmented data, independently managed processes, and
-cross-functional requirements into governed analytical environments that
-support consistent execution and reliable executive decisions.
+I challenged premature decline logic and redesigned constrained-counteroffer search. On the same **750 synthetic merchants across two scenarios**, reportable structures expanded from **557 to 6,519**, while evidence requirements, hard-policy stops and distinct review/authorization outcomes remained in place. [Inspect the version comparison][msbf-changes].
 
-### Governed Decision Systems
+Narrative QA covers all **1,500 application-scenario paths**. The funded demonstration follows **130 scenario paths for 120 days**, keeping recommendations, permissions, synthetic servicing and reconciliation distinct.
 
-I design transparent rule, policy, strategy, and treatment frameworks with
-configurable parameters, account-level outcomes, reason codes, exception
-states, monitoring, archives, and certified consumption boundaries.
+**See the distinction:** [738 versus 098][msbf-cases] contrasts missing evidence with a repairable structure problem. Different terms can repair a financing structure; they cannot replace required evidence.
 
-### Applied Data Science and Time-to-Event Analytics
+**[Power BI file (.pbix)][msbf-pbix] · [Report reading guide][msbf-bi-guide] · [Curated merchant cases][msbf-cases]**
 
-I develop interpretable frameworks connecting segmentation, survival and
-hazard modeling, scenario design, cross-validation, calibration, model
-diagnostics, sensitivity analysis, and stakeholder evidence.
+<details>
+<summary><strong>Also inspect the executive cohort command center</strong></summary>
 
-### Model and Data Validation
+P01 connects funding sources, decision categories, industry economics and account-attention signals. This original view is **Baseline only**, not the combined two-scenario population.
 
-I apply independent recalculation, benchmark and challenger analysis,
-source-to-target reconciliation, matched-population comparison, UAT,
-sensitivity testing, model diagnostics, exception management, and effective
-challenge.
+[![MSBF P01 Baseline: executive cohort command center with funding sources, decision outcomes, endpoint status and active alerts.][msbf-p01-image]][msbf-p01]
 
-### Executive Decision Support
+*Current-portfolio risk/loss context: **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss**. This is synthetic-forward account evidence, not a live book or actual financial performance. [Full-resolution command center][msbf-p01] · [Cohort report][msbf-cohort].*
 
-I translate complex analytical and operational evidence into concise
-risk/fact/options narratives covering the issue, dependencies, customer and
-control implications, recommendations, required decisions, and follow-through.
+</details>
 
-### Operating Models and Governance
+[Explore MSBF][msbf] · [Executive brief][msbf-brief] · [Architecture][msbf-architecture] · [Module documentation][msbf-modules] · [Published v2.1.0][msbf-release]
 
-I connect requirements, methodology, population logic, code, validation
-evidence, execution artifacts, decision records, controls, ownership, and
-implementation across independently accountable teams.
+**Learn the mechanism:** [How the Governed Decision Engine Works][msbf-poster-decision] explains evidence, structure search and final authority. [What Happens After the Decision][msbf-poster-after] follows monitoring, permissions, servicing and reconciliation. Both open at full resolution; the [masterclass][msbf-learn] adds worked cases.
+
+**Using the report:** follow the [Current Use Guide][msbf-current-use]; inspect a separate viewing copy without refreshing or saving over the accepted PBIX. Its historical `v2.1.0-rc2.pbix` filename is retained. A generalized new-campaign runner is not provided.
 
 ---
 
-## Featured Build: Merchant Sales-Based Financing Strategy Simulator
-
-[View the repository](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator) ·
-[Review the Module 2 / G3 tag](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/module-2-g3-v2.0.0) ·
-[Open Releases](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/releases)
-
-[![Enterprise Merchant Sales-Based Financing Platform](https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform_v2.png)](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform_v2.png)
-
-[Open the architecture full size](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform_v2.png) ·
-[Architecture PDF](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Enterprise_Merchant_Sales_Based_Financing_Platform_v2.pdf) ·
-[Ten-page executive strategy brief](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/From_First_Advance_to_Intelligent_Portfolio_v2.pdf) ·
-[Module 1 / G2 lineage](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Module_1_Governed_Evidence_Contract_and_Acceptance_Lineage.png) ·
-[Module 2 / G3 lineage](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/enterprise_architecture/Module_2_Governed_Decisioning_Operations_Portfolio_%26_G3_Acceptance_Lineage.png)
-
-> **Current governed position:** Module 1 / G2 accepted · Module 2 / G3 accepted · `G2_M1_CONTRACT = PASS` · `G3_M2_CONTRACT = PASS` · Campaign Scale Certification current
-
-A deterministic, synthetic PostgreSQL 15 enterprise platform for merchant
-sales-based financing tied to daily point-of-sale activity and sales-linked
-repayment.
-
-The platform begins before application—with acquisition sources, campaigns,
-touchpoints, attribution, and merchant-acquisition cost—and extends through
-merchant operating evidence, cash-flow capacity, resilience, risk, comparative
-loss, unit economics, eligibility, pricing, counteroffers, final-offer
-authorization, simulated activation and operating states, servicing,
-reconciliation, portfolio analytics, strategy comparison, optimization, and
-enterprise G3 certification.
-
-The build is designed as an integrated decision system rather than a collection
-of disconnected scripts. Requirements, parameters, source lineage, business
-logic, controls, validation, evidence, interpretation, and ownership remain
-connected at every boundary.
-
-### Executive Visual Story
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/pages_v2/02_launch_with_discipline.png">
-<img src="https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/executive_strategy/pages_v2/02_launch_with_discipline.png" alt="Launch With Discipline" width="100%">
-</a>
-
-<strong>Launch With Discipline</strong>
-
-Capability advances only after the preceding boundary is validated, evidenced,
-and contract-certified.
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/pages_v2/05_from_decision_to_enterprise_certification.png">
-<img src="https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/executive_strategy/pages_v2/05_from_decision_to_enterprise_certification.png" alt="From Decision to Enterprise Certification" width="100%">
-</a>
-
-<strong>From Decision to Enterprise Certification</strong>
-
-Module 2 converts accepted G2 evidence into governed offers, simulated
-operations, portfolio strategy, and an accepted G3 consumption boundary.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/pages_v2/08_proof_before_scale.png">
-<img src="https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/executive_strategy/pages_v2/08_proof_before_scale.png" alt="Proof Before Scale" width="100%">
-</a>
-
-<strong>Proof Before Scale</strong>
-
-Every stage must generate, validate, challenge, reconcile, and certify before
-the enterprise boundary advances.
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/pages_v2/10_the_opportunity_ahead.png">
-<img src="https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/executive_strategy/pages_v2/10_the_opportunity_ahead.png" alt="The Opportunity Ahead" width="100%">
-</a>
-
-<strong>The Opportunity Ahead</strong>
-
-The next governed proof expands accepted-fidelity replay through performance
-shakedown and full-campaign certification.
-
-</td>
-</tr>
-</table>
-
-[Open the complete ten-page brief](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/From_First_Advance_to_Intelligent_Portfolio_v2.pdf) ·
-[View the ten-page contact sheet](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/executive_strategy/from_first_advance_to_intelligent_portfolio_contact_sheet_v2.png)
-
-### End-to-End Platform
-
-```text
-Acquisition Source, Campaign & Attribution
-→ Application & Requested Structure
-→ POS, Settlement, Deposit & Liquidity Evidence
-→ Cash-Flow, Capacity & Operating Resilience
-→ Integrated Risk, Exposure, Recovery & Comparative Loss
-→ Unit Economics & Merchant Acquisition Cost
-→ G2 Certified Consumption
-→ Eligibility & Policy Gates
-→ Pricing, Structure & Counteroffers
-→ Final-Offer Authorization
-→ Simulated Booking, Funding & Activation
-→ Remittance, Exposure & Portfolio Monitoring
-→ Early Warning, Servicing & Intervention
-→ Payment Reconciliation & Account-State Certification
-→ Portfolio KPI & Servicing Analytics
-→ Strategy Comparison, Simulation & Optimization
-→ G3 Enterprise Portfolio Certification
-→ Campaign Scale Certification
-```
-
-### Accepted Release Evidence
-
-| Governed release fact | Accepted result |
-|---|---:|
-| Module 1 progression | G0, G1, and M1.2–M1.17 |
-| Designed Module 1 foundation | 110 parent/control/reference tables; 2,138 designed columns |
-| Deterministic applications | 750 across matched `BASELINE` and `RECESSION_ENERGY` scenarios |
-| Integrated G2 rows | 1,500 |
-| Accepted physical hash identities | 18 / 18 PASS |
-| Module 1 positive controls | 128 / 128 PASS |
-| Module 1 negative controls | 20 / 20 PASS |
-| Module 1 deterministic or archive mismatches | 0 |
-| Module 1 contract | **`G2_M1_CONTRACT — PASS`** |
-| Accepted Module 2 stages | 12 / 12 |
-| Integrated application/origination rows | 1,500 |
-| Simulated operational-account rows | 59 |
-| Strategy/scope rows | 24 |
-| M2.11 controls and prerequisites | 120 / 120 positive · 20 / 20 negative · 45 / 45 acceptance |
-| M2.11 strategy comparison | 20 matched groups across 19 risk scenarios |
-| M2.12 controls and requirements | 128 / 128 positive · 20 / 20 negative · 48 / 48 acceptance |
-| M2.12 governed report sets | 24 / 24 PASS |
-| Latest-versus-archive reconciliation | PASS |
-| Module 2 contract | **`G3_M2_CONTRACT — PASS`** |
-| Governed publication manifest | 1,930 files |
-
-### What the Platform Demonstrates
-
-#### Acquire and Establish Evidence
-
-- deterministic merchant, owner, processor, application, POS, settlement,
-  deposit, and liquidity foundations;
-- acquisition-source taxonomy, campaign funnels, application touchpoints,
-  deterministic attribution, and merchant acquisition cost;
-- source confidence, verification evidence, fraud indicators, and processor
-  continuity;
-- matched baseline and adverse scenarios using the same governed identities.
-
-#### Decide and Structure
-
-- eligibility and policy gates;
-- pricing, terms, factor-rate, and remittance design;
-- configurable counteroffers and alternative structures;
-- final-offer authorization;
-- transparent route, disposition, reason-code, and rationale evidence.
-
-#### Operate and Service
-
-- deterministic simulated booking, funding, activation, and initial-limit
-  states;
-- simulated daily remittance, exposure, and performance monitoring;
-- early-warning indicators and intervention triggers;
-- servicing, restructures, collections, and lifecycle controls;
-- payment reconciliation and certified account-state evidence.
-
-#### Analyze, Compare, Optimize, and Certify
-
-- portfolio KPI and servicing analytics;
-- matched baseline and challenger strategy comparison;
-- strategy simulation across governed scenarios and objectives;
-- portfolio optimization and explicit trade-off analysis;
-- certified G3 enterprise consumption;
-- controlled preparation for the next governed campaign cycle.
-
-### Current Scale Path
-
-```text
-750 accepted-fidelity replay
-→ 2,500 performance shakedown
-→ 25,000 full campaign
-```
-
-Each step requires a separate fail-closed readiness and authorization gate.
-Preparation does not imply production fitness, causal inference, autonomous
-decisioning, or Module 3 authorization.
-
-[Explore the Module 2 stage tree](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/Module_2) ·
-[Review M2.12 enterprise certification](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/Module_2/2.12_Enterprise_Portfolio_Certification_and_G3_Contract) ·
-[Open campaign-scale documentation](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/campaign_scale) ·
-[Open the artifact map](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/PROJECT_ARTIFACT_MAP.md) ·
-[Review project history](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/project_history)
-
-> **Interpretation boundary:** The platform uses deterministic synthetic data.
-> It is not a production lending or servicing system, deployed credit policy,
-> calibrated causal model, or autonomous decision service. Power BI references
-> describe governed, Power BI-ready views and publication visuals—not a
-> production dashboard deployment.
-
----
-
-## Other Flagship Builds
-
+<a name="cds"></a>
 ### Enterprise Credit Decisioning Strategy Simulator
 
-[View the repository](https://github.com/andrew-goad/credit_decisioning_strategy)
+**How do policy choices—and changes to the analytical foundation—alter a credit decision?**  
+PostgreSQL · SAS reconciliation · Power BI
 
-[![Enterprise Credit Decisioning Strategy Module 2 Architecture](https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/main/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png)](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png)
+I built a configurable consumer-credit strategy environment with adjustable population size, product/score mix, selected product bounds, policy thresholds and counteroffer settings. I executed **39 runs of 50,000 synthetic applications each: 1.95 million decision evaluations**, not 1.95 million unique borrowers. Source-consistent comparisons within appropriate scenario groups expose access, affordability, exposure and review/decline tradeoffs.
 
-A governed two-module decisioning environment with a PostgreSQL simulation
-core, independent SAS reconciliation evidence, and an interactive Power BI
-release-validation layer.
+The synthetic foundation also evolved through four Module 1 workstreams: **mortgage realism, risk-proxy dispersion, scenario design and revolving-payment sensitivity**. The development story is not just that the code changed, but that its consequences can be examined.
 
-The platform demonstrates:
+<a name="cds-power-bi"></a>
+#### Power BI: what changed, for whom, and why?
 
-- deterministic application and risk generation;
-- product-by-score risk surfaces;
-- configurable credit-policy and treatment strategies;
-- affordability and exposure controls;
-- approvals, counteroffers, manual reviews, and declines;
-- reason-code and decision-path traceability;
-- matched baseline and challenger comparison;
-- Expected Loss, approval, affordability, and exposure trade-offs;
-- archive-backed campaign evidence;
-- strategy-frontier analysis;
-- Power BI executive-to-application reconciliation.
+This two-page report is **Module 1 v1.0 → v2.0 release/version validation**, not a dashboard of the separate Module 2 strategy campaign.
 
-**Governed scale:**
+The **Executive Summary** establishes the full matched population, affected applications and field-level differences. The **Application Release Impact Explorer** lets a reviewer select an application, inspect before/after values and read an automated DAX narrative connecting the changes to documented Module 1 workstream themes.
 
-| Measure | Result |
-|---|---:|
-| Risk scenarios | 19 |
-| Archived application rows | 950,000 |
-| Strategy runs | 39 |
-| Archived strategy decisions | 1.95 million |
-| Matched comparison groups | 20 |
-| Power BI matched applications | 50,000 |
-| Applications with one or more functional changes | 21,326 |
-| Application-variable change records | 58,382 |
+[![CDS Application Release Impact Explorer: matched application lookup, version-one/version-two values, changes and an automated workstream-linked Analyst Interpretation.][cds-explorer-image]][cds-explorer]
 
-[![Module 1 Power BI Executive Summary](https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png)](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png)
+*Original application-level release evidence. `ESTIMATED_PD` and `EXPECTED_LOSS_AMOUNT` belong to the current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss** framework. Rounded display values do not replace precise reconciliation values; workstream associations are not exclusive causal attribution. [Open full resolution][cds-explorer].*
 
-[View the Release Impact Explorer](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_impact_explorer.png) ·
-[Download the Power BI report](https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/Module1_V1_V2_Release_Validation.pbix)
+The report reconciles **50,000 matched applications**, distinguishing **21,326 affected applications** from **58,382 application-variable differences**. I used ERR/SAS reconciliation in this version-analysis workflow, connecting the data comparison to both executive and application-level understanding.
+
+**[Power BI file (.pbix)][cds-pbix] · [Executive validation report preview][cds-executive] · [Application change explorer][cds-explorer]**
+
+<details>
+<summary><strong>View the executive release-validation summary</strong></summary>
+
+[![CDS Module 1 executive release-validation summary: 50,000 matched applications, 21,326 affected, 58,382 variable-change records and seven changed functional variables.][cds-executive-image]][cds-executive]
+
+*These are synthetic version-comparison counts, not a campaign approval rate. Risk/loss fields use the current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss** formulation. [Full-resolution summary][cds-executive].*
+
+</details>
+
+[Explore CDS][cds] · [Campaign run evidence][cds-campaign] · [Module 1 workstreams][cds-workstreams] · [Validation summary][cds-validation] · [System architecture][cds-architecture]
 
 ---
 
+<a name="ssf"></a>
 ### Survival Strategy Framework
 
-[View the repository](https://github.com/andrew-goad/survival-strategy-framework)
+**When does customer-attrition risk emerge, and how do configured scenarios change the same cohort's predicted survival?**  
+Python · pandas · scikit-learn · lifelines
 
-[![Enterprise Survival Strategy Framework Architecture](https://raw.githubusercontent.com/andrew-goad/survival-strategy-framework/main/docs/Enterprise%20Survival%20Strategy%20Framework%20Architecture.png)](https://github.com/andrew-goad/survival-strategy-framework/blob/main/docs/Enterprise%20Survival%20Strategy%20Framework%20Architecture.png)
+I directed development and executed a configurable time-to-event workflow for **synthetic customer-retention analysis**. Descriptive K-Means personas remain separate from regularized Cox proportional-hazards modeling. Input contracts, cross-validation, out-of-fold calibration, proportional-hazards review and risk stratification connect the fitted model to scenario analysis and stakeholder reports.
 
-A governed Python time-to-event analytical system that separates descriptive
-persona discovery from regularized Cox proportional hazards modeling and
-carries the work through risk stratification, cross-validation, calibration,
-proportional-hazards review, same-cohort scenario simulation, dependency
-reconstruction, stakeholder reporting, and immutable run evidence.
+[![SSF: predicted survival curves for identical target IDs under baseline, no-change control, improvement assumptions and service-friction stress.][ssf-scenarios-image]][ssf-scenarios]
 
-```text
-Synthetic Time-to-Event Data
-→ Input Contract Validation
-→ K-Means Persona Discovery
-→ Regularized CoxPH Model
-→ Five-Fold Cross-Validation
-→ Out-of-Fold Calibration
-→ Proportional-Hazards Review
-→ Population Risk Stratification
-→ Top-Quartile Target Cohort
-→ Control / Improvement / Stress Scenarios
-→ Dependency-Safe Re-Scoring
-→ Predicted Survival Comparison
-→ Executive PPTX + Technical PDF
-→ Run Registry and Acceptance Evidence
-```
+*Same target IDs; different configured assumptions. These curves show modeled sensitivity—not measured retention improvement or causal treatment effects. Retained validation posture: **PASS_WITH_REVIEW**, with documented proportional-hazards sensitivity and calibration limitations. [Open full resolution][ssf-scenarios].*
 
-**Validated demonstration:**
+The demonstration uses **7,500 synthetic records** and compares **six scenarios on the same 1,875-record target cohort**. Changing a base feature also rebuilds its interactions and squared terms before rescoring. Neutral and adverse controls keep the comparison from becoming a showcase of favorable outcomes alone.
 
-- **7,500** synthetic records;
-- **2,964** observed events and **4,536** right-censored records;
-- **12** governed CoxPH features;
-- **0.827** five-fold mean concordance;
-- **3** stable descriptive personas;
-- **1,875** governed target-cohort records;
-- **6** controlled scenarios;
-- **`PASS_WITH_REVIEW`** acceptance posture with documented PH sensitivity.
-
-[![Same-Cohort Baseline and Scenario Survival](https://raw.githubusercontent.com/andrew-goad/survival-strategy-framework/main/outputs/baseline_vs_scenario_survival.png)](https://github.com/andrew-goad/survival-strategy-framework/blob/main/outputs/baseline_vs_scenario_survival.png)
-
-The objective is not merely to fit a survival model. It is to build a governed
-analytical framework in which the model, validation, scenario assumptions,
-evidence, and interpretation remain connected.
+[Explore SSF][ssf] · [Python implementation][ssf-source] · [Executive deck][ssf-executive] · [Technical evidence][ssf-technical] · [Validation and review posture][ssf-validation]
 
 ---
 
-## Repository Map
+<a name="domain-tools"></a>
+## Furnishing and remediation strategy
 
-| # | Repository | Primary stack | Demonstrates |
-|---:|---|---|---|
-| 1 | [merchant-sales-based-financing-strategy-simulator](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator) | PostgreSQL | Acquisition attribution, operating evidence, risk and economics, governed offers, simulated servicing states, portfolio strategy, optimization, and G2/G3 enterprise certification |
-| 2 | [credit_decisioning_strategy](https://github.com/andrew-goad/credit_decisioning_strategy) | PostgreSQL + Power BI | Credit-policy simulation, counteroffers, matched comparison, Expected Loss trade-offs, Power BI release validation, and executive-to-application evidence |
-| 3 | [survival-strategy-framework](https://github.com/andrew-goad/survival-strategy-framework) | Python | K-Means personas, regularized CoxPH, cross-validation, calibration, PH diagnostics, same-cohort simulation, and automated stakeholder evidence |
-| 4 | [forensic-data-integrity](https://github.com/andrew-goad/forensic-data-integrity) | Python | Pre-model data fitness, hidden-null detection, exception prioritization, and executive quality evidence |
-| 5 | [enterprise-reconciliation-reporting](https://github.com/andrew-goad/enterprise-reconciliation-reporting) | SAS | Metadata-driven A/B reconciliation, schema drift, tolerance testing, UAT, and audit evidence |
-| 6 | [metro2-remediation-sandbox](https://github.com/andrew-goad/metro2-remediation-sandbox) | PostgreSQL | Longitudinal credit-reporting remediation, treatment logic, impact windows, and before/after validation |
-| 7 | [insurance-coverage-reconciliation](https://github.com/andrew-goad/insurance-coverage-reconciliation) | SAS | Coverage-interval reconciliation, lapse rules, adjustment factors, and customer-impact evidence |
-| 8 | [financial-tvm-optimization](https://github.com/andrew-goad/financial-tvm-optimization) | SAS | Treasury-indexed financial redress, custom functions, chunked processing, and liability evidence |
+### Metro 2 Credit-Reporting & Remediation Sandbox
 
----
+**How should a proposed reporting correction interact with the underlying account-performance history?**
 
-## Additional Governed Systems
+This configurable PostgreSQL testbed connects synthetic account-month history and Payment History Profiles to linked status, rating and delinquency-date attributes. Adjustable profile mixes and impact windows support treatment exploration, before/after inspection and identification of eligible unresolved cases for manual follow-up.
 
-### Forensic Data Integrity Gatekeeper
+The domain distinction matters: **reporting cleanup is not evidence of behavioral cure**. Recovery, cure, deletion and review remain different questions. This is a methodology sandbox—not a production furnishing or ongoing monitoring service.
 
-[View the repository](https://github.com/andrew-goad/forensic-data-integrity)
+[Explore the sandbox][metro2] · [Reporting-population generator][metro2-generator] · [Impact, cure and treatment logic][metro2-treatment]
 
-Python pre-model diagnostic engine that detects hidden and disguised nulls,
-dominant-value concentration, zero-variance fields, format and type defects,
-inconsistent categories, and anomalous distributions. Produces audit ledgers,
-executive scorecards, severity-ranked exceptions, and validation-ready handoff
-evidence.
+## Data tools and financial-remediation methods
 
-### Enterprise Reconciliation Reporting
+Focused prototypes address analytical prerequisites and specialized calculation problems. They complement the featured products without implying one integrated eight-project platform.
 
-[View the repository](https://github.com/andrew-goad/enterprise-reconciliation-reporting)
+**[Forensic Data Integrity][fdi] · Python**  
+Which selected column-level data-fitness issues deserve investigation? Inspect hidden-null screening, scoring assumptions and hypothetical cleanup—not a claim that data have been repaired. [Diagnostic source][fdi-source].
 
-SAS metadata-driven A/B validation framework supporting schema drift,
-key-only and value-level differences, absolute and relative tolerances,
-date/time tolerances, character normalization, duplicate-key controls,
-severity-ranked exceptions, run metadata, UAT assertions, and controlled
-evidence exports.
+**[Enterprise Reconciliation Reporting][err] · SAS**  
+What changed between datasets? Compare key coverage, schema/type/format and within-key values, with configurable tolerance and normalization logic. [Analyst guide][err-guide] · [Source][err-source].
 
-### Metro 2 Remediation Sandbox
+**[Insurance Coverage Reconciliation][icr] · SAS**  
+How should customer proof and configurable short-gap treatment affect coverage adjustment? Make the date-window methodology inspectable; an adjustment factor is not payment authority. [Coverage logic][icr-source].
 
-[View the repository](https://github.com/andrew-goad/metro2-remediation-sandbox)
+**[Financial TVM Optimization][tvm] · SAS**  
+How does time affect financial redress? Explore Treasury-linked daily accrual and periodic capitalization from supplied impact amounts and dates—not realized payments or a performance benchmark. [Calculation source][tvm-source].
 
-PostgreSQL longitudinal credit-reporting environment with a five-million-account
-baseline portfolio, month-level truth tables, financial and credit-impact
-windows, cure and manual-review logic, treatment assignment, delta-based
-remediation, before/after validation, and explainable reason-code evidence.
-
-### Insurance Coverage Reconciliation
-
-[View the repository](https://github.com/andrew-goad/insurance-coverage-reconciliation)
-
-SAS interval-reconciliation engine comparing proof-of-coverage evidence with
-lender-placed CPI policy windows. Demonstrates overlapping-interval
-consolidation, coverage validation, configurable lapse thresholds,
-policy-adjustment factors, parameter governance, and account-level
-customer-impact evidence.
-
-### Treasury-Indexed Remediation Liability Engine
-
-[View the repository](https://github.com/andrew-goad/financial-tvm-optimization)
-
-Memory-efficient SAS financial recalculation engine using one-year Constant
-Maturity Treasury rates, `PROC FCMP`, in-memory arrays, chunked account
-processing, annual compounding, final remainder-interest calculations, and
-account-level liability evidence.
+**Reuse, not eight isolated stories.** I used ERR in CDS's release-analysis workflow and adapted CDS counteroffer concepts into MSBF. That is reuse of a tool and transfer of a method—not a claim of identical source versions or one common production pipeline.
 
 ---
 
-## Portfolio Mission
-
-This GitHub portfolio is a public proof layer for **enterprise data strategy,
-governed analytics, applied data science, model and data validation, and
-decision-system architecture**.
-
-The repositories are not isolated notebooks or dashboard-only demonstrations.
-Each independently developed system pairs code with some combination of:
-
-- enterprise architecture and code-flow documentation;
-- business, analytical, and data requirements;
-- controlled parameters and strategy configurations;
-- deterministic synthetic or anonymized demonstration data;
-- BRDs, validation summaries, and QA evidence;
-- reconciliation and exception outputs;
-- UAT scripts and acceptance checks;
-- reason-code and decision-path evidence;
-- run registries, immutable archives, and consumption contracts;
-- acquisition, attribution, merchant-CAC, and unit-economics evidence;
-- executive summaries, presentations, and reviewer paths;
-- Power BI release validation and application-level traceability;
-- technical runbooks and operating guidance.
-
-The repository organization reflects the documentation, validation,
-version-control, and operating-model discipline I applied in regulated
-financial-services and federal environments.
-
----
-
-## Enterprise Decision-System Lifecycle
-
-```text
-Business Context and Decision Requirements
-→ Data Fitness, Lineage, and Reconciliation
-→ Model, Policy, Strategy, or Scenario Development
-→ Scenario, Sensitivity, and Challenger Testing
-→ Decision or Treatment Execution
-→ Risk, Financial, Customer, or Lifecycle Impact Quantification
-→ Validation, Monitoring, and Exception Management
-→ Executive Narrative and Governed Follow-Through
-```
-
-The recurring architecture is:
-
-```text
-Governed Inputs
-→ Transparent Logic
-→ Configurable Parameters
-→ Account-Level Outcomes
-→ Reason Codes and Exceptions
-→ Validation Evidence
-→ Executive Interpretation
-→ Reproducible Handoff
-```
-
----
-
-## Professional Foundation
-
-The portfolio architecture reflects disciplines developed across three highly
-regulated public and financial-sector environments.
-
-### Wells Fargo — Enterprise Data Strategy, Decision Systems, and Consumer Auto
-
-**Wells Fargo | 03/2018–04/2026**
-
-- **Executive Director — Senior Lead Analytics Consultant | 06/2022–04/2026**
-- **Vice President — Lead Analytics Consultant | 03/2018–06/2022**
-
-Promoted while serving as principal analytical architect for Consumer Auto
-programs exceeding **$1B in exposure and customer impact**.
-
-#### Target Operating Model and End-to-End Analytical Ownership
-
-Led analytical workstreams across **15+ remediations**, including SCRA,
-COVID-deferrals, disaster relief, a major data-center outage, inaccurate
-payoff-date reporting, CPI, and multiple credit-furnishing matters.
-
-Owned the analytical components of the Remediation Target Operating Model,
-including the Data Analytical Approach, Population Identification Workbook,
-SAS/SQL code, population outputs, run procedures, validation evidence,
-Population Identification Review responses, Decision Forum analysis, and
-specialized review dependencies.
-
-#### Executive Decision Leadership and Implementation Assurance
-
-Authored, reviewed, edited, and presented Decision Forum materials using
-risk/fact/options narratives. Supplied underlying analytics, trade-offs,
-customer and control implications, and recommendations; aligned Legal,
-Compliance, Risk, Technology, Credit Bureau Management, Execution, IT&V,
-Audit, regulators, and senior leadership; and required missing decisions or
-changes to be formally documented before execution.
-
-#### CPI Analytical-System Governance and Sustained Assurance
-
-From **2018 through 2025**, designed, operated, and governed Direct and
-Indirect Auto recalculation tools, proof-of-insurance intake and QA, customer
-redress, time-value-of-money loss-of-use relief, prior-payment netting,
-manual-review integration, credit-reporting redress, tax reporting, recurring
-production, executive reporting, and Audit/regulatory support.
-
-Independent Audit found **100% alignment** between retained proof-of-insurance
-evidence and the reviewed third-party data.
-
-Led CPI credit-reporting redress for approximately **850,000 accounts** through
-approximately **200 external mass-maintenance submissions**, with corresponding
-internal system-of-record updates and account/borrower-level before-and-after
-lineage across key Metro 2 fields.
-
-#### Enterprise Furnishing Architecture and Effective Challenge
-
-- Consolidated **500+ multi-line-of-business submissions** representing more
-  than **100M account-month furnishing actions**.
-- Built a SAS-to-Teradata pipeline to standardize and validate line-of-business
-  data and publish governed datasets.
-- Established account-month SQL controls aligning remediation and furnishing
-  history to prevent favorable-state overwrites.
-- Led UAT across data mappings, decision rules, outputs, and exceptions.
-- Evaluated **20M+ historical Consumer Auto Finance accounts** through the
-  control framework.
-- Defended a unified correction that accelerated customer relief while
-  preserving accountability for remediation- and furnishing-caused impacts.
-- Designed targeted account- and impact-month re-furnishing logic that
-  preserved favorable customer reporting and saved approximately **$60,000 per
-  submission**.
-
-Beyond the 15+ remediations led, served as an enterprise furnishing SME, peer
-reviewer, and mentor on **10+ additional credit-reporting remediations**.
-
-#### Reusable Standards and Analytics Enablement
-
-Built or supported reusable Common Code, Standard Data Format transformation,
-Teradata-based archival delivery, tax-reporting standardization, BRDs, Job
-Aids, operating procedures, department-wide training, knowledge continuity,
-and aged IT&V review resolution.
-
----
-
-### Office of the Comptroller of the Currency — Credit-Risk Modeling and Research
-
-**Research Analyst, Credit Risk Analysis Division | 03/2014–03/2018**
-
-Supported **16 economists and examination teams** with model-ready data,
-analytical methods, validation logic, benchmarks, and decision evidence.
-
-Selected experience:
-
-- developed and tested Cox proportional hazards, discrete-time survival,
-  binary/multinomial logistic, and OLS frameworks for delinquency, default,
-  prepayment, and pricing;
-- constructed and validated longitudinal bureau panels spanning **875,516
-  loans** and **2,363,261 loan-year observations**;
-- assessed right-censoring, term-age interactions, prime/subprime segments,
-  macro sensitivity, lifetime risk, and pricing;
-- independently recalculated outputs, tested sensitivities, reconciled source
-  data, and translated results into Tableau views;
-- led review of third-party PD vendor contracts and data fitness for CECL and
-  life-of-loan PD analysis;
-- built syndicated-credit entity-resolution and fuzzy-matching logic for
-  cross-bank internal risk-rating comparison;
-- developed obligor-level sequencing for first and subsequent
-  delinquency/default events across products;
-- built ArcGIS branch-distance measures, a one-second Python market-event
-  collector, and a 10,000+ document conversion and SAS ingestion pipeline;
-- provided technical direction and mentoring to junior analysts and interns.
-
-The authors of both the peer-reviewed and OCC long-term auto-loan studies
-publicly acknowledged me for **“excellent research support.”**
-
-Selected research supported:
-
-- *Risks of Long-Term Auto Loans*;
-- *A Puzzle in the Relation Between Risk and Pricing of Long-Term Auto Loans*.
-
----
-
-### U.S. Census Bureau — Federal Statistical Production and Validation
-
-**Survey Statistician | 07/2009–03/2014**
-
-Modernized national survey systems supporting the Annual Capital Expenditures
-Survey and Annual Retail Trade Survey.
-
-Selected experience:
-
-- led day-to-day production for a six-analyst nightly refresh operation and
-  served as escalation point for processing failures and unusual conditions;
-- architected a SAS-to-Access-to-JavaScript/HTML production pipeline;
-- designed analyst views prioritizing major year-over-year discrepancies and
-  high-impact nonrespondents;
-- automated executive-ready industry narratives, completion summaries, and
-  management reporting;
-- built SAS-to-Excel/VBA validation workbooks for analyst-controlled review;
-- developed editing, imputation, response-tracking, outlier,
-  disclosure-avoidance, and benchmarking controls;
-- maintained methodology, runbooks, troubleshooting guidance, management
-  summaries, and published economic narratives.
-
----
-
-## Technical Toolkit
-
-### Professional Engineering and Analytics
-
-`SAS Enterprise Guide` · `SAS Macro Programming` · `PROC SQL` · `PROC FCMP` ·
-`SQL` · `Teradata` · `PostgreSQL` · `DBeaver` · `Python` · `Git/GitHub` ·
-`Tableau` · `ArcGIS` · `Excel/VBA` · `Microsoft Access` · `JavaScript/HTML` ·
-`PuTTY Batch Processing` · `SharePoint` · `Jira` · `PowerPoint`
-
-### Portfolio Platforms and Libraries
-
-`PostgreSQL` · `Power BI Desktop` · `Power Query` · `DAX` ·
-`Power BI Semantic Modeling` · `Interactive Report Design` · `pandas` ·
-`NumPy` · `scikit-learn` · `lifelines` · `matplotlib` · `openpyxl` ·
-`python-pptx` · `ReportLab` · `Relational Data Modeling` ·
-`Archive and Evidence Tables`
-
-### Modeling and Decision Science
-
-`Cox Proportional Hazards` · `Kaplan-Meier` ·
-`Discrete-Time Survival and Hazard Models` ·
-`Binary and Multinomial Logistic Regression` · `Ordinary Least Squares` ·
-`K-Means` · `Probability of Default` · `Loss Given Default` ·
-`Expected Loss` · `CECL` · `Life-of-Loan PD` · `Cross-Validation` ·
-`Out-of-Fold Calibration` · `Proportional-Hazards Diagnostics` ·
-`Scenario and Sensitivity Analysis` · `Policy-Rule Simulation` ·
-`Pricing Strategy` · `Counteroffer Governance` ·
-`Champion/Challenger Comparison` · `Matched Strategy Comparison` ·
-`Portfolio Strategy Simulation` · `Portfolio Optimization` ·
-`Strategy-Frontier Analysis`
-
-### Validation and Governance
-
-`Independent Recalculation` · `Benchmark and Challenger Analysis` ·
-`Matched-Population Comparison` · `Source-to-Target Reconciliation` ·
-`Data Quality and Lineage Review` · `UAT and Acceptance Testing` ·
-`Reasonableness and Sensitivity Testing` · `Model Diagnostics` ·
-`Calibration Review` · `Dependency Synchronization` ·
-`Monitoring and Exception Management` · `Contract-Certified Consumption` ·
-`Documentation Standards` · `Effective Challenge` ·
-`Executive Decision Evidence`
-
-### Enterprise Data Strategy and Operating Models
-
-`Data Standardization` · `Cross-LOB Integration` · `Requirements Traceability` ·
-`Data Analytical Approaches` · `Population Identification Workbooks` ·
-`Run Procedures` · `Governance Checkpoints` · `Decision Forums` ·
-`Executive Narratives` · `Escalation Management` · `Control Reviews` ·
-`Reusable Playbooks` · `Training and Knowledge Transfer`
-
-### Domain Experience
-
-`Consumer Credit Risk` · `Merchant Sales-Based Financing` ·
-`POS and Settlement Analytics` · `Acquisition Attribution and Merchant CAC` ·
-`Unit Economics` · `Pricing and Offer Strategy` · `Portfolio Analytics` ·
-`Servicing Analytics` · `Auto Finance` · `Credit-Bureau and Metro 2 Furnishing` ·
-`FCRA` · `CECL` · `PD/LGD/Expected Loss` ·
-`Customer Retention and Lifecycle Analytics` · `CPI` · `SCRA` ·
-`Loss Mitigation` · `Syndicated Credit` · `Federal Bank Supervision` ·
-`Remediation and Customer-Impact Analytics`
-
----
-
-## Education and Professional Development
-
-- **Bachelor of Arts in Economics, Minor in Mathematics** — Virginia Tech,
-  2005–2009
-- **SAS Base Programming Certification** — 2009
-- **SAS Advanced Programming Professional Certification** — 2009
-- **Lean Six Sigma Yellow Belt** — Office of the Comptroller of the Currency,
-  2016
-- **Associate Citation in Project Management** — George Washington University,
-  2013
-
----
-
-## Portfolio Philosophy
-
-### No Cold Handoffs
-
-A system is not complete when the code runs or the output is produced.
-
-A system is complete when the relevant stakeholders can understand:
-
-- what question was being answered;
-- which data were used;
-- how the logic operated;
-- which assumptions and parameters mattered;
-- how the output was tested;
-- which controls were applied;
-- what exceptions remain;
-- what decision is required;
-- how the result should be implemented;
-- how ownership and follow-through will be maintained.
-
-```text
-Data integrity before modeling
-Lineage before inference
-Validation before reliance
-Strategy testing before implementation
-Reason codes before unexplained outcomes
-Reconciliation before closure
-Executive interpretation before action
-Documentation before handoff
-```
-
-The objective is not complexity for its own sake. It is analytical work that
-is transparent, reproducible, governable, and useful.
-
-I also use generative AI as a controlled accelerator for synthesis, narrative
-development, presentation refinement, documentation, and risk-control
-ideation—while retaining source verification, human judgment, and
-accountability.
-
----
-
-## Data and Confidentiality Boundary
-
-All public repositories use synthetic, anonymized, or demonstration data.
-
-These projects do not expose:
-
-- customer or personally identifiable information;
-- employer-owned code;
-- production credit policy;
-- proprietary remediation rules;
-- confidential model inputs;
-- regulated operational pipelines;
-- internal systems or restricted documentation.
-
-The repositories are designed to demonstrate transferable methodology,
-enterprise architecture, validation discipline, governance, documentation
-quality, and executive communication in a public setting.
-
----
-
-## Connect
-
-- [LinkedIn](https://www.linkedin.com/in/andrewrgoad)
-- [GitHub](https://github.com/andrew-goad)
-- [Merchant Sales-Based Financing Strategy Simulator](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator)
-- [Enterprise Credit Decisioning Strategy Simulator](https://github.com/andrew-goad/credit_decisioning_strategy)
-- [Survival Strategy Framework](https://github.com/andrew-goad/survival-strategy-framework)
-
-> **Analytics · Applied Data Science · Decision Systems · Consumer Credit**
->
-> **Logic, controls, validation, evidence, and interpretation travel together.**
+<a name="professional-foundation"></a>
+## Professional foundation
+
+My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
+
+**Wells Fargo · Consumer Auto:** promoted from Vice President to Executive Director while owning analytical systems and leading remediation workstreams, furnishing controls and executive decision support across programs exceeding $1B in exposure and customer impact.
+
+**Office of the Comptroller of the Currency:** model-ready longitudinal data, assigned analyses, independent recalculation and validation, and decision evidence supporting economists and examination teams. Research support is distinct from final model, publication or supervisory ownership.
+
+**U.S. Census Bureau:** statistical-production modernization, a six-analyst nightly operating workflow, analyst-controlled validation tools and automated management narratives.
+
+The recurring thread is practical: **make the data usable, challenge the method, explain the result and preserve the next person's ability to act on it.**
+
+## How I work
+
+**Build:** SAS · SQL/Teradata · Python; PostgreSQL and Power BI/Power Query/DAX in the public portfolio.  
+**Challenge:** source and output reconciliation · benchmark/challenger comparisons · sensitivity analysis · model diagnostics.  
+**Deliver:** requirements and code · usable analytical views · executive interpretation · documented operating handoffs.
+
+I use AI to accelerate implementation and documentation while retaining responsibility for requirements, analytical judgment, verification and delivery. Project-specific sources distinguish implemented capability, demonstrated runs, review qualifications and future work. Synthetic examples do not establish employer deployment, commercial adoption or realized customer outcomes.
+
+**Let's connect about senior analytics, credit strategy, decision systems and analytical-product work.** [LinkedIn][linkedin] · [All repositories][github]
+
+<!-- Direct proof artifacts are pinned to the reviewed source editions; project links open the repository front doors. -->
+
+[msbf]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator
+[cds]: https://github.com/andrew-goad/credit_decisioning_strategy
+[ssf]: https://github.com/andrew-goad/survival-strategy-framework
+[err]: https://github.com/andrew-goad/enterprise-reconciliation-reporting
+[tvm]: https://github.com/andrew-goad/financial-tvm-optimization
+[icr]: https://github.com/andrew-goad/insurance-coverage-reconciliation
+[metro2]: https://github.com/andrew-goad/metro2-remediation-sandbox
+[fdi]: https://github.com/andrew-goad/forensic-data-integrity
+[linkedin]: https://www.linkedin.com/in/andrewrgoad
+[github]: https://github.com/andrew-goad?tab=repositories
+[msbf-p03]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/power_bi/m2_v2_1/assets/power_bi/core/p03_application_journey_738_baseline.png
+[msbf-p03-image]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/power_bi/m2_v2_1/assets/power_bi/core/p03_application_journey_738_baseline.png
+[msbf-p01]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/power_bi/m2_v2_1/assets/power_bi/core/p01_command_center_baseline.png
+[msbf-p01-image]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/power_bi/m2_v2_1/assets/power_bi/core/p01_command_center_baseline.png
+[cds-explorer]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_impact_explorer.png
+[cds-explorer-image]: https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_impact_explorer.png
+[cds-executive]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png
+[cds-executive-image]: https://raw.githubusercontent.com/andrew-goad/credit_decisioning_strategy/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/module1_v1_v2_release_validation_executive_summary.png
+[ssf-scenarios]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/baseline_vs_scenario_survival.png
+[ssf-scenarios-image]: https://raw.githubusercontent.com/andrew-goad/survival-strategy-framework/620991e428942b0cc09faaafc111670ad35deca2/outputs/baseline_vs_scenario_survival.png
+[msbf-pbix]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/power_bi/m2_v2_1/release/MSBF_Merchant_Credit_Intelligence_M2_v2.1.0-rc2.pbix
+[msbf-bi-guide]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/guide/ANALYTICS.md
+[msbf-cases]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/guide/EXPLAINABILITY.md
+[msbf-brief]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/portfolio_visuals/MSBF_VISUAL_PUBLIC_R1/assets/pitch/From_First_Advance_to_Intelligent_Portfolio.pdf
+[msbf-architecture]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/portfolio_visuals/MSBF_VISUAL_PUBLIC_R1/assets/architecture/png/Enterprise_Merchant_Sales_Based_Financing_Platform_v2_1.png
+[msbf-modules]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/README.md
+[msbf-current-use]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/guide/CURRENT_USE.md
+[msbf-changes]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/release_change_control/module_2_g3_v2_1/reports/02_DETAILED_CHANGE_LOG_AND_DATA_RECONCILIATION_REPORT.md
+[msbf-cohort]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/portfolio_visuals/MSBF_VISUAL_PUBLIC_R1/assets/cohort/MSBF_Merchant_Credit_Intelligence_Initial_750_Cohort_Overview_R3_PATCH1_20260908_REVIEW.pdf
+[msbf-learn]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/guide/LEARNING.md
+[msbf-poster-decision]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/portfolio_visuals/MSBF_VISUAL_PUBLIC_R1/assets/posters/MSBF_MCI_How_the_Governed_Decision_Engine_Works_v2_1_COPYFIX_R1.png
+[msbf-poster-after]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/fd9f67b6d1d7fc848d315bcb696487b82c9a8046/docs/portfolio_visuals/MSBF_VISUAL_PUBLIC_R1/assets/posters/MSBF_MCI_What_Happens_After_the_Decision_v2_1_COPYFIX_R1.png
+[cds-pbix]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/Module1_V1_V2_Release_Validation.pbix
+[cds-workstreams]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/docs/Enterprise_Credit_Decisioning_Simulator_Module1_Synthetic_Application_Risk_Engine_BRD_v2.0.pdf
+[cds-validation]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/Enterprise_Credit_Decisioning_Simulator_Module1_Validation_Summary_v2.0.pdf
+[cds-campaign]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/outputs/module2_credit_policy_strategy_decision_outcome_simulation_engine_v1.0_OUTPUT_strategy_run_campaign_registry.csv
+[cds-architecture]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png
+[cds-map]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/PROJECT_ARTIFACT_MAP.md
+[ssf-technical]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/Technical_Model_Evidence.pdf
+[ssf-validation]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/tests/Survival_Strategy_Framework_Validation_Summary.pdf
+[ssf-scenarios-table]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/scenario_results.csv
+[ssf-source]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/src/survival_strategy_framework.py
+[ssf-executive]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/Survival_Strategy_Deck.pptx
+[metro2-generator]: https://github.com/andrew-goad/metro2-remediation-sandbox/blob/1201adcc0b3a74a0f81e8f456a9e3d901f0aaca7/src/module_01_metro2_synthetic_portfolio_generator.sql
+[metro2-treatment]: https://github.com/andrew-goad/metro2-remediation-sandbox/blob/1201adcc0b3a74a0f81e8f456a9e3d901f0aaca7/src/module_02_metro2_remediation_engine.sql
+[fdi-source]: https://github.com/andrew-goad/forensic-data-integrity/blob/6654869c244e74eaaad9794e3130c6151b9882a2/src/forensic_diagnostic_engine.py
+[err-guide]: https://github.com/andrew-goad/enterprise-reconciliation-reporting/blob/a6f8c2dfeefe24b0489094b5e619fc48fdf7b272/docs/reconciliation_learning_aid.sas
+[err-source]: https://github.com/andrew-goad/enterprise-reconciliation-reporting/blob/a6f8c2dfeefe24b0489094b5e619fc48fdf7b272/src/enterprise_reconciliation_diagnostic.sas
+[icr-source]: https://github.com/andrew-goad/insurance-coverage-reconciliation/blob/9fd3b4dd83aeb9466600656d7b7b1ae5257fba79/src/policy_coverage_reconciliation.sas
+[tvm-source]: https://github.com/andrew-goad/financial-tvm-optimization/blob/81cc82ef88e022830c5ec862c5dcb582380b3ce2/src/high_scale_tvm_engine.sas
+[msbf-release]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/releases/tag/module-2-g3-v2.1.0
