@@ -1,6 +1,6 @@
 # Andrew R. Goad
 
-### Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit
+**Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit**
 
 **I build analytical products that turn complex data into decisions people can understand, test and carry into the next operational step.**
 
@@ -18,12 +18,12 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 *Independent, synthetic, non-production demonstrations. Screenshots open in the browser; the linked Power BI files open in Power BI Desktop—not as hosted live dashboards.*
 
 <a name="msbf"></a>
-### MSBF · Merchant Credit Intelligence
+### Merchant Sales-Based Financing (MSBF) · Merchant Credit Intelligence
 
 **What financing can a merchant support, why, and what happens after funding?**  
 PostgreSQL · Python · Power BI
 
-I designed and published a merchant-financing product demonstration connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
+I designed and published a sales-based merchant-financing product demonstration connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
 
 <a name="msbf-power-bi"></a>
 #### Power BI: explain the decision—and follow the account
@@ -32,7 +32,7 @@ I designed and published a merchant-financing product demonstration connecting a
 
 [![MSBF P03: synthetic merchant 738 in Baseline, with operating evidence, financing rationale and the funded account's performance, monitoring and servicing.][msbf-p03-image]][msbf-p03]
 
-*Original P03 view, merchant 738 / Baseline. Risk/loss fields are current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss**—not calibrated lending risk or realized profit. Activity after the 23 July 2026 source cutoff is synthetic-forward through 22 November 2026. [Open full resolution][msbf-p03].*
+*Original P03 view, merchant 738 / Baseline. Risk/loss fields are **Current Portfolio — synthetic estimated-PD proxy, LGD, EAD/exposure, and comparative Expected Loss**—not calibrated lending risk or realized profit. Activity after the 23 July 2026 source cutoff is synthetic-forward through 22 November 2026. [Open full resolution][msbf-p03].*
 
 The four-page application connects **cohort context → performance over time → individual merchant explanation → servicing and attention**. Industry, acquisition-source, scenario and date controls let a reviewer move from the portfolio to the account behind it.
 
@@ -40,9 +40,11 @@ I challenged premature decline logic and redesigned constrained-counteroffer sea
 
 Narrative QA covers all **1,500 application-scenario paths**. The funded demonstration follows **130 scenario paths for 120 days**, keeping recommendations, permissions, synthetic servicing and reconciliation distinct.
 
-**See the distinction:** [738 versus 098][msbf-cases] contrasts missing evidence with a repairable structure problem. Different terms can repair a financing structure; they cannot replace required evidence.
+**See the distinction under Recession Energy:** [merchant 738 versus merchant 098][msbf-cases]. Merchant 738 lacks required evidence, while merchant 098 receives an authorized counteroffer after a feasible structure is found. The 738 image above shows its separate Baseline outcome. Different terms can repair a financing structure; they cannot replace required evidence.
 
-**[Power BI file (.pbix)][msbf-pbix] · [Report reading guide][msbf-bi-guide] · [Curated merchant cases][msbf-cases]**
+**[View the merchant example][msbf-p03] · [Explore MSBF][msbf] · [Power BI file (.pbix)][msbf-pbix] / [Reading guide][msbf-bi-guide]**
+
+*Power BI Desktop: inspect a separate viewing copy without refreshing or saving over the accepted PBIX; follow the [Current Use Guide][msbf-current-use].*
 
 <details>
 <summary><strong>Also inspect the executive cohort command center</strong></summary>
@@ -51,15 +53,20 @@ P01 connects funding sources, decision categories, industry economics and accoun
 
 [![MSBF P01 Baseline: executive cohort command center with funding sources, decision outcomes, endpoint status and active alerts.][msbf-p01-image]][msbf-p01]
 
-*Current-portfolio risk/loss context: **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss**. This is synthetic-forward account evidence, not a live book or actual financial performance. [Full-resolution command center][msbf-p01] · [Cohort report][msbf-cohort].*
+*Risk/loss context: **Current Portfolio — synthetic estimated-PD proxy, LGD, EAD/exposure, and comparative Expected Loss**. This is synthetic-forward account evidence, not a live book or actual financial performance. [Full-resolution command center][msbf-p01] · [Cohort report][msbf-cohort].*
 
 </details>
 
-[Explore MSBF][msbf] · [Executive brief][msbf-brief] · [Architecture][msbf-architecture] · [Module documentation][msbf-modules] · [Published v2.1.0][msbf-release]
+<details>
+<summary><strong>Architecture, proof posters and technical/use guidance</strong></summary>
+
+[Executive brief][msbf-brief] · [Architecture][msbf-architecture] · [Module documentation][msbf-modules] · [Published v2.1.0][msbf-release]
 
 **Learn the mechanism:** [How the Governed Decision Engine Works][msbf-poster-decision] explains evidence, structure search and final authority. [What Happens After the Decision][msbf-poster-after] follows monitoring, permissions, servicing and reconciliation. Both open at full resolution; the [masterclass][msbf-learn] adds worked cases.
 
-**Using the report:** follow the [Current Use Guide][msbf-current-use]; inspect a separate viewing copy without refreshing or saving over the accepted PBIX. Its historical `v2.1.0-rc2.pbix` filename is retained. A generalized new-campaign runner is not provided.
+**Using the report:** the [Current Use Guide][msbf-current-use] governs viewing and reproducibility. The accepted PBIX retains its historical `v2.1.0-rc2.pbix` filename. A generalized new-campaign runner is not provided.
+
+</details>
 
 ---
 
@@ -71,7 +78,7 @@ PostgreSQL · SAS reconciliation · Power BI
 
 I built a configurable consumer-credit strategy environment with adjustable population size, product/score mix, selected product bounds, policy thresholds and counteroffer settings. I executed **39 runs of 50,000 synthetic applications each: 1.95 million decision evaluations**, not 1.95 million unique borrowers. Source-consistent comparisons within appropriate scenario groups expose access, affordability, exposure and review/decline tradeoffs.
 
-The synthetic foundation also evolved through four Module 1 workstreams: **mortgage realism, risk-proxy dispersion, scenario design and revolving-payment sensitivity**. The development story is not just that the code changed, but that its consequences can be examined.
+The synthetic foundation also evolved through four Module 1 workstreams: **mortgage realism, risk-proxy dispersion, scenario design and revolving-payment sensitivity**. For example, revolving-payment estimates were revised so that APR changes affect payment burden—making the synthetic foundation more useful for strategy testing.
 
 <a name="cds-power-bi"></a>
 #### Power BI: what changed, for whom, and why?
@@ -82,7 +89,7 @@ The **Executive Summary** establishes the full matched population, affected appl
 
 [![CDS Application Release Impact Explorer: matched application lookup, version-one/version-two values, changes and an automated workstream-linked Analyst Interpretation.][cds-explorer-image]][cds-explorer]
 
-*Original application-level release evidence. `ESTIMATED_PD` and `EXPECTED_LOSS_AMOUNT` belong to the current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss** framework. Rounded display values do not replace precise reconciliation values; workstream associations are not exclusive causal attribution. [Open full resolution][cds-explorer].*
+*Original application-level release evidence. `ESTIMATED_PD` and `EXPECTED_LOSS_AMOUNT` belong to the **Current Portfolio — synthetic estimated-PD proxy, LGD, EAD/exposure, and comparative Expected Loss** framework. Rounded display values do not replace precise reconciliation values; workstream associations are not exclusive causal attribution. [Open full resolution][cds-explorer].*
 
 The report reconciles **50,000 matched applications**, distinguishing **21,326 affected applications** from **58,382 application-variable differences**. I used ERR/SAS reconciliation in this version-analysis workflow, connecting the data comparison to both executive and application-level understanding.
 
@@ -93,7 +100,7 @@ The report reconciles **50,000 matched applications**, distinguishing **21,326 a
 
 [![CDS Module 1 executive release-validation summary: 50,000 matched applications, 21,326 affected, 58,382 variable-change records and seven changed functional variables.][cds-executive-image]][cds-executive]
 
-*These are synthetic version-comparison counts, not a campaign approval rate. Risk/loss fields use the current-portfolio **synthetic estimated-PD proxy, LGD, EAD/exposure and comparative Expected Loss** formulation. [Full-resolution summary][cds-executive].*
+*These are synthetic version-comparison counts, not a campaign approval rate. Risk/loss fields use the **Current Portfolio — synthetic estimated-PD proxy, LGD, EAD/exposure, and comparative Expected Loss** formulation. [Full-resolution summary][cds-executive].*
 
 </details>
 
@@ -111,7 +118,7 @@ I directed development and executed a configurable time-to-event workflow for **
 
 [![SSF: predicted survival curves for identical target IDs under baseline, no-change control, improvement assumptions and service-friction stress.][ssf-scenarios-image]][ssf-scenarios]
 
-*Same target IDs; different configured assumptions. These curves show modeled sensitivity—not measured retention improvement or causal treatment effects. Retained validation posture: **PASS_WITH_REVIEW**, with documented proportional-hazards sensitivity and calibration limitations. [Open full resolution][ssf-scenarios].*
+*Same target IDs; different configured assumptions. These curves show modeled sensitivity—not measured retention improvement or causal treatment effects. Retained validation posture: **PASS_WITH_REVIEW**, with documented proportional-hazards sensitivity and calibration limitations. Late-horizon support is limited: the [retained calibration evidence][ssf-calibration] has no records remaining at risk at the 24-month endpoint. [Open full resolution][ssf-scenarios].*
 
 The demonstration uses **7,500 synthetic records** and compares **six scenarios on the same 1,875-record target cohort**. Changing a base feature also rebuilds its interactions and squared terms before rescoring. Neutral and adverse controls keep the comparison from becoming a showcase of favorable outcomes alone.
 
@@ -126,7 +133,7 @@ The demonstration uses **7,500 synthetic records** and compares **six scenarios 
 
 **How should a proposed reporting correction interact with the underlying account-performance history?**
 
-This configurable PostgreSQL testbed connects synthetic account-month history and Payment History Profiles to linked status, rating and delinquency-date attributes. Adjustable profile mixes and impact windows support treatment exploration, before/after inspection and identification of eligible unresolved cases for manual follow-up.
+With adjustable population size and account-profile mix, this PostgreSQL testbed lets users explore credit-reporting remediation on synthetic histories before live implementation. It links account-month history and Payment History Profiles to Account Status, Payment Rating, DOFD, Date of Account Information and Date Closed, then exposes simulated before/after changes and eligible unresolved cases for manual follow-up.
 
 The domain distinction matters: **reporting cleanup is not evidence of behavioral cure**. Recovery, cure, deletion and review remain different questions. This is a methodology sandbox—not a production furnishing or ongoing monitoring service.
 
@@ -157,9 +164,9 @@ How does time affect financial redress? Explore Treasury-linked daily accrual an
 
 My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
 
-**Wells Fargo · Consumer Auto:** promoted from Vice President to Executive Director while owning analytical systems and leading remediation workstreams, furnishing controls and executive decision support across programs exceeding $1B in exposure and customer impact.
+**Wells Fargo · Consumer Auto:** promoted from Vice President to Executive Director while owning the seven-year Collateral Protection Insurance (CPI) analytical system and leading additional remediation workstreams, furnishing controls and executive decision support across programs exceeding $1B in exposure and customer impact.
 
-**Office of the Comptroller of the Currency:** model-ready longitudinal data, assigned analyses, independent recalculation and validation, and decision evidence supporting economists and examination teams. Research support is distinct from final model, publication or supervisory ownership.
+**Office of the Comptroller of the Currency:** model-ready longitudinal data and assigned analyses for Auto risk/pricing research; CECL/lifetime-PD methodology; independent recalculation, validation and decision evidence supporting economists and examination teams. Research support is distinct from final model, publication or supervisory ownership.
 
 **U.S. Census Bureau:** statistical-production modernization, a six-analyst nightly operating workflow, analyst-controlled validation tools and automated management narratives.
 
@@ -214,10 +221,9 @@ I use AI to accelerate implementation and documentation while retaining responsi
 [cds-validation]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_1_Synthetic_Application_%26_Risk_Modeling_Engine/v2.0/tests/Enterprise_Credit_Decisioning_Simulator_Module1_Validation_Summary_v2.0.pdf
 [cds-campaign]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/outputs/module2_credit_policy_strategy_decision_outcome_simulation_engine_v1.0_OUTPUT_strategy_run_campaign_registry.csv
 [cds-architecture]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/Module_2_Credit_Policy_Strategy_%26_Decision_Outcome_Simulation_Engine/v1.0/docs/Enterprise%20Credit%20Decisioning%20Strategy%20Module%202%20Architecture.png
-[cds-map]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/1361046fa7f4e61dfa4cfc6105577e50f53af083/PROJECT_ARTIFACT_MAP.md
 [ssf-technical]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/Technical_Model_Evidence.pdf
 [ssf-validation]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/tests/Survival_Strategy_Framework_Validation_Summary.pdf
-[ssf-scenarios-table]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/scenario_results.csv
+[ssf-calibration]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/calibration_metrics.csv
 [ssf-source]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/src/survival_strategy_framework.py
 [ssf-executive]: https://github.com/andrew-goad/survival-strategy-framework/blob/620991e428942b0cc09faaafc111670ad35deca2/outputs/Survival_Strategy_Deck.pptx
 [metro2-generator]: https://github.com/andrew-goad/metro2-remediation-sandbox/blob/1201adcc0b3a74a0f81e8f456a9e3d901f0aaca7/src/module_01_metro2_synthetic_portfolio_generator.sql
