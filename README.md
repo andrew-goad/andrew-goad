@@ -4,7 +4,7 @@
 
 **I build analytical products that turn complex data into decisions people can understand, test and carry into the next operational step.**
 
-My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau, including promotion from Vice President to Executive Director at Wells Fargo. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I advanced to Senior Lead Analytics Consultant at the Executive Director level. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
@@ -164,9 +164,9 @@ How does time affect financial redress? Explore Treasury-linked daily accrual an
 
 My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
 
-**Wells Fargo · Consumer Auto:** promoted from Vice President to Executive Director while owning the seven-year Collateral Protection Insurance (CPI) analytical system and leading additional remediation workstreams, furnishing controls and executive decision support across programs exceeding $1B in exposure and customer impact.
+**Wells Fargo · Consumer Auto:** advanced to Senior Lead Analytics Consultant at the Executive Director level. Led analytics for Collateral Protection Insurance (CPI) customer remediation and other Consumer Auto remediation workstreams, representing more than $1B in exposure and customer impact. Responsibilities included seven years of CPI recalculation-tool ownership and analytical delivery, plus credit-reporting corrections, furnishing controls and executive decision support.
 
-**Office of the Comptroller of the Currency:** model-ready longitudinal data and assigned analyses for Auto risk/pricing research; CECL/lifetime-PD methodology; independent recalculation, validation and decision evidence supporting economists and examination teams. Research support is distinct from final model, publication or supervisory ownership.
+**Office of the Comptroller of the Currency:** supported 16 Credit Risk Analysis Division economists in credit-risk research and bank examination/stress-testing work, including DFAST. Engineered longitudinal bureau data and pricing inputs for economist-led Auto research; developed and tested CECL/lifetime-PD approaches; independently recalculated and validated evidence. Research support is distinct from final model, publication or supervisory ownership.
 
 **U.S. Census Bureau:** statistical-production modernization, a six-analyst nightly operating workflow, analyst-controlled validation tools and automated management narratives.
 
