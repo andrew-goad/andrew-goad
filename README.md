@@ -1,10 +1,10 @@
 # Andrew R. Goad
 
-**Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit**
+**Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit · AI-Enabled Delivery**
 
 **I build analytical products that turn complex data into decisions people can understand, test and carry into the next operational step.**
 
-My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I advanced to Senior Lead Analytics Consultant at the Executive Director level. This independent portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I advanced to Senior Lead Analytics Consultant at the Executive Director level, advising leaders on remediation strategy and challenging proposed directions when I identified risk. This independent portfolio makes my current AI-assisted work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
@@ -164,11 +164,11 @@ How does time affect financial redress? Explore Treasury-linked daily accrual an
 
 My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
 
-**Wells Fargo · Consumer Auto:** advanced to Senior Lead Analytics Consultant at the Executive Director level. Led analytics for Collateral Protection Insurance (CPI) customer remediation and other Consumer Auto remediation workstreams, representing more than $1B in exposure and customer impact. Responsibilities included seven years of CPI recalculation-tool ownership and analytical delivery, plus credit-reporting corrections, furnishing controls and executive decision support.
+**Wells Fargo · Consumer Auto:** advanced to Senior Lead Analytics Consultant at the Executive Director level. Led analytics for Collateral Protection Insurance (CPI) customer remediation and other Consumer Auto remediation workstreams, representing more than $1B in exposure and customer impact. Designed and owned proof-of-insurance intake/QA and Direct and Indirect Auto recalculation tools, leading seven years of recurring analytical production and regulatory-response support. Advised Decision Forums through recommendations and effective challenge, and delivered credit-reporting corrections, furnishing controls and validated SAS feeds supporting management and review dashboards.
 
-**Office of the Comptroller of the Currency:** supported 16 Credit Risk Analysis Division economists in credit-risk research and bank examination/stress-testing work, including DFAST. Engineered longitudinal bureau data and pricing inputs for economist-led Auto research; developed and tested CECL/lifetime-PD approaches; independently recalculated and validated evidence. Research support is distinct from final model, publication or supervisory ownership.
+**Office of the Comptroller of the Currency:** supported 16 Credit Risk Analysis Division economists in credit-risk research and bank examination/stress-testing work, including DFAST. Engineered longitudinal bureau data and pricing inputs for economist-led Auto research; developed and tested CECL/lifetime-PD approaches; independently recalculated and validated evidence. Delivered Tableau views and explanations to support investigation and review. Research contributions were acknowledged in the *Journal of Credit Risk* and an OCC working paper. Research support is distinct from final model, publication or supervisory ownership.
 
-**U.S. Census Bureau:** statistical-production modernization, a six-analyst nightly operating workflow, analyst-controlled validation tools and automated management narratives.
+**U.S. Census Bureau:** built dashboards for the Annual Capital Expenditures Survey (ACES) and analytical workbooks for the Annual Retail Trade Survey (ARTS), helping analysts investigate material discrepancies and company-level drivers. Led day-to-day ACES production for a six-analyst nightly workflow; ARTS workbooks supported on-demand analysis. These products connected analyst investigation with management visibility into industry performance and production progress.
 
 The recurring thread is practical: **make the data usable, challenge the method, explain the result and preserve the next person's ability to act on it.**
 
@@ -178,7 +178,7 @@ The recurring thread is practical: **make the data usable, challenge the method,
 **Challenge:** source and output reconciliation · benchmark/challenger comparisons · sensitivity analysis · model diagnostics.  
 **Deliver:** requirements and code · usable analytical views · executive interpretation · documented operating handoffs.
 
-I use AI to accelerate implementation and documentation while retaining responsibility for requirements, analytical judgment, verification and delivery. Project-specific sources distinguish implemented capability, demonstrated runs, review qualifications and future work. Synthetic examples do not establish employer deployment, commercial adoption or realized customer outcomes.
+I use AI to accelerate implementation, testing, documentation and iteration while retaining responsibility for requirements, analytical judgment, validation and final acceptance. I publish business requirements, validation evidence and AI conversation records alongside the code so reviewers can examine and challenge the development process—not just the finished product. **TRUTH made visible.** Project-specific sources distinguish implemented capability, demonstrated runs, review qualifications and future work. Synthetic examples do not establish employer deployment, commercial adoption or realized customer outcomes.
 
 **Let's connect about senior analytics, credit strategy, decision systems and analytical-product work.** [LinkedIn][linkedin] · [All repositories][github]
 
