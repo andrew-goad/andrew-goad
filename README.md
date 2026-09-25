@@ -8,9 +8,43 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
-[LinkedIn][linkedin] · [Featured work](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
+
+<a name="leadership-method"></a>
+## Human-in-the-Loop Analytical Leadership
+
+**A case study in directing cross-functional, task-specific AI workstreams.**
+
+Using Merchant Sales-Based Financing as the case, I coordinated specialized reporting, remediation/build and separate review conversations while retaining responsibility for business decisions. The report shows the original interactions, the questions that redirected the work, and the evidence used to verify the results.
+
+**[Read the full case study · 35 pages][hitl-report] · [Browse the LinkedIn carousel · 13 pages][hitl-carousel]**
+
+[![Agree on direction. Delegate the work. Retain judgment. Original human instruction authorizing substantial AI-assisted execution after context and strategy were established, with key decisions reserved for human judgment.][hitl-mandate-image]][hitl-report]
+
+*Original instruction from the case study: context supplied, execution delegated, judgment retained. [Open the instruction at full resolution][hitl-mandate].*
+
+- **Prepare the work for substantial execution.** Bring requirements and evidence across workstreams, agree on direction, and define when consequential decisions must return for human judgment.
+- **Keep questioning after acceptance.** Challenge an accepted rule, investigate behavior that does not make business sense, and propose a mechanism the evidence can test.
+- **Verify the change and teach the method.** Reconcile both the intended correction and the facts that should remain unchanged, obtain separate challenge, and make the reasoning usable by another person.
+
+*Independent, synthetic, non-production case. The conversations were human-coordinated and did not communicate autonomously. Separate AI-assisted project review is not external professional assurance.*
+
+<details>
+<summary><strong>Take the method into your next analytical problem</strong></summary>
+
+**Frame → Trace → Challenge → Test → Reconcile → Review → Return → Teach**
+
+[![Eight reusable analytical leadership questions: frame the business concern, trace source evidence, challenge the rule, test explanations, reconcile changes and unchanged facts, seek review, return to reporting, and teach the reasoning.][hitl-method-image]][hitl-method]
+
+*Stay accountable across the loop, including after an acceptance milestone. [Open the method at full resolution][hitl-method] · [See the verification and reconciliation example][hitl-reconcile].*
+
+</details>
+
+**Do not stop at the output. Challenge the reasoning. Teach the method.**
+
+---
 
 <a name="featured-work"></a>
 ## Featured analytical products
@@ -234,3 +268,11 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 [icr-source]: https://github.com/andrew-goad/insurance-coverage-reconciliation/blob/9fd3b4dd83aeb9466600656d7b7b1ae5257fba79/src/policy_coverage_reconciliation.sas
 [tvm-source]: https://github.com/andrew-goad/financial-tvm-optimization/blob/81cc82ef88e022830c5ec862c5dcb582380b3ce2/src/high_scale_tvm_engine.sas
 [msbf-release]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/releases/tag/module-2-g3-v2.1.0
+
+[hitl-report]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/Human_in_the_Loop_Analytical_Leadership.pdf
+[hitl-carousel]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/Human_in_the_Loop_Analytical_Leadership_LinkedIn_Carousel.pdf
+[hitl-mandate]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_02_Operating_Mandate.png
+[hitl-mandate-image]: https://raw.githubusercontent.com/andrew-goad/andrew-goad/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_02_Operating_Mandate.png
+[hitl-method]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_33_Reusable_Method.png
+[hitl-method-image]: https://raw.githubusercontent.com/andrew-goad/andrew-goad/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_33_Reusable_Method.png
+[hitl-reconcile]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_28_Verify_and_Reconcile.png
