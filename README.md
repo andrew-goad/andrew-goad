@@ -8,7 +8,7 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
-[LinkedIn][linkedin] · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
 
