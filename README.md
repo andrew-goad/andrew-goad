@@ -206,6 +206,8 @@ My employment record supplies the institutional context; the independent project
 
 The recurring thread is practical: **make the data usable, challenge the method, explain the result and preserve the next person's ability to act on it.**
 
+**Entrepreneurial experience · Pittsburgh #GoadLife:** I launched a Pittsburgh short-term rental in March 2025, generating $70K+ in gross bookings as of September 2026. I have maintained [Airbnb Superhost](https://airbnb.com/h/pittsburgh-goadlife) and [Vrbo Premier Host](https://www.vrbo.com/4496537) recognition continuously since September 2025. I manage the property remotely, coordinating local housekeeping, landscaping and maintenance vendors, and use AI to assist with guest feedback, supply reorders, pricing and accounting.
+
 ## How I work
 
 **Build:** SAS · SQL/Teradata · Python; PostgreSQL and Power BI/Power Query/DAX in the public portfolio.  
@@ -214,7 +216,7 @@ The recurring thread is practical: **make the data usable, challenge the method,
 
 I use AI to accelerate implementation, testing, documentation and iteration while retaining responsibility for requirements, analytical judgment, validation and final acceptance. I publish business requirements, validation evidence and AI conversation records alongside the code so reviewers can examine and challenge the development process—not just the finished product. **TRUTH made visible.** Project-specific sources distinguish implemented capability, demonstrated runs, review qualifications and future work. Synthetic examples do not establish employer deployment, commercial adoption or realized customer outcomes.
 
-**Let's connect about senior analytics, credit strategy, decision systems and analytical-product work.** [LinkedIn][linkedin] · [All repositories][github]
+**Let’s connect about senior analytics, credit strategy, decision systems and analytical product leadership.** [LinkedIn][linkedin] · [All repositories][github]
 
 <!-- Direct proof artifacts are pinned to the reviewed source editions; project links open the repository front doors. -->
 
