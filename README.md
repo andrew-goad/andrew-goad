@@ -8,7 +8,7 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** the logic, evidence, interpretation and ownership travel together.
 
-[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
 
@@ -198,13 +198,15 @@ How does time affect financial redress? Explore Treasury-linked daily accrual an
 
 My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
 
-**Wells Fargo · Consumer Auto:** advanced to Senior Lead Analytics Consultant at the Executive Director level. Led analytics for Collateral Protection Insurance (CPI) customer remediation and other Consumer Auto remediation workstreams, representing more than $1B in exposure and customer impact. Designed and owned proof-of-insurance intake/QA and Direct and Indirect Auto recalculation tools, leading seven years of recurring analytical production and regulatory-response support. Advised Decision Forums through recommendations and effective challenge, and delivered credit-reporting corrections, furnishing controls and validated SAS feeds supporting management and review dashboards.
+**Wells Fargo · Consumer Auto:** advanced to Senior Lead Analytics Consultant at the Executive Director level. Led analytics for Collateral Protection Insurance (CPI) customer remediation and other Consumer Auto remediation workstreams, representing more than $1B in exposure and customer impact. Designed and owned proof-of-insurance intake/QA and Direct and Indirect Auto recalculation tools, leading seven years of recurring analytical production and regulatory-response support. Advised Decision Forums through recommendations and effective challenge, and delivered credit-reporting corrections, furnishing controls and validated SAS feeds supporting management and review dashboards. Coordinated project timelines and strengthened team practices through peer review, mentoring, knowledge-base articles and training.
 
 **Office of the Comptroller of the Currency:** supported 16 Credit Risk Analysis Division economists in credit-risk research and bank examination/stress-testing work, including DFAST. Engineered longitudinal bureau data and pricing inputs for economist-led Auto research; developed and tested CECL/lifetime-PD approaches; independently recalculated and validated evidence. Delivered Tableau views and explanations to support investigation and review. Research contributions were acknowledged in the *Journal of Credit Risk* and an OCC working paper. Research support is distinct from final model, publication or supervisory ownership.
 
-**U.S. Census Bureau:** built dashboards for the Annual Capital Expenditures Survey (ACES) and analytical workbooks for the Annual Retail Trade Survey (ARTS), helping analysts investigate material discrepancies and company-level drivers. Led day-to-day ACES production for a six-analyst nightly workflow; ARTS workbooks supported on-demand analysis. These products connected analyst investigation with management visibility into industry performance and production progress.
+**U.S. Census Bureau:** built dashboards for the Annual Capital Expenditures Survey (ACES) and analytical workbooks for the Annual Retail Trade Survey (ARTS), helping analysts investigate material discrepancies and company-level drivers. Led day-to-day ACES production for a six-analyst nightly workflow; ARTS workbooks supported on-demand analysis. These products improved workforce deployment and issue prioritization while giving management visibility into industry performance and production progress.
 
 The recurring thread is practical: **make the data usable, challenge the method, explain the result and preserve the next person's ability to act on it.**
+
+**Professional recommendations:** [Read letters from 11 colleagues](Andrew_R_Goad_Recommendation_Letters.pdf) on analytical rigor, delivery, partnership and mentoring. Reference contact details available upon request.
 
 **Entrepreneurial experience · Pittsburgh #GoadLife:** I launched a Pittsburgh short-term rental in March 2025, generating $70K+ in gross bookings as of September 2026. I have maintained [Airbnb Superhost](https://airbnb.com/h/pittsburgh-goadlife) and [Vrbo Premier Host](https://www.vrbo.com/4496537) recognition continuously since September 2025. I manage the property remotely, coordinating local housekeeping, landscaping and maintenance vendors, and use AI to assist with guest feedback, supply reorders, pricing and accounting.
 
