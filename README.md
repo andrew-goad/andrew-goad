@@ -4,7 +4,7 @@
 
 **I build analytical products around the people who use them: what they need to understand and what they need to do next. I lead that work by setting clear priorities and helping colleagues deliver with confidence.**
 
-My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I led analytics for CPI and other Consumer Auto remediation programs representing $1B+ in exposure and customer impact, connecting analytical development, recurring production and regulatory response to customer outcomes. This independent portfolio makes my current AI-assisted work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I developed and owned Collateral Protection Insurance (CPI) and other Consumer Auto remediation analytics representing $1B+ in exposure and customer impact, connecting recurring production and regulatory response to customer outcomes. This independent, synthetic, non-production portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
@@ -44,6 +44,12 @@ Using Merchant Sales-Based Financing as the case, I coordinated specialized repo
 
 **Do not stop at the output. Challenge the reasoning. Teach the method.**
 
+### Practical playbook: How to Use AI to Streamline Your Job Search
+
+I turned my résumé-refinement and application-preparation workflow into a reusable playbook. It includes career-evidence inputs, full prompts, research and tailoring steps, and a separate audit and human-review loop—freeing up time for submissions, interview preparation, networking and marketing your strengths.
+
+**[Read the playbook](How_to_Use_AI_to_Streamline_Your_Job_Search/How_to_Use_AI_to_Streamline_Your_Job_Search.pdf) · [Copy the prompts](How_to_Use_AI_to_Streamline_Your_Job_Search/AI_Job_Search_Copy_Paste_Prompts.txt) · [See the résumé case study](How_to_Use_AI_to_Streamline_Your_Job_Search/Andrew_Goad_Resume_Process_Carousel.pdf)**
+
 ---
 
 <a name="featured-work"></a>
@@ -57,7 +63,7 @@ Using Merchant Sales-Based Financing as the case, I coordinated specialized repo
 **What financing can a merchant support, why, and what happens after funding?**  
 PostgreSQL · Python · Power BI
 
-I designed and published a sales-based merchant-financing product demonstration connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
+I designed and published a demonstration of merchant financing repaid through a fixed share of daily sales, connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
 
 <a name="msbf-power-bi"></a>
 #### Power BI: explain the decision—and follow the account
@@ -198,9 +204,11 @@ How does time affect financial redress? Explore Treasury-linked daily accrual an
 
 My employment record supplies the institutional context; the independent projects above supply inspectable work samples.
 
-**Wells Fargo · Consumer Auto:** led analytics for Collateral Protection Insurance (CPI) and other Consumer Auto remediation programs representing $1B+ in exposure and customer impact. Across seven years of CPI work, led analytical development, recurring production and regulatory response for proof-of-insurance intake, redress recalculation, credit-reporting corrections and tax reporting, supporting consent-order clearance efforts. Validated SAS feeds and dashboard evidence connected complaint handlers and Audit investigators to account-level remediation decisions.
+**Wells Fargo · Consumer Auto:** developed and owned analytics for Collateral Protection Insurance (CPI) and other Consumer Auto remediation programs representing $1B+ in exposure and customer impact. Seven years of CPI work connected proof-of-insurance intake and redress recalculation to recurring production, credit-reporting and tax delivery, and regulatory response supporting consent-order clearance efforts. Validated SAS feeds and dashboard evidence helped complaint handlers and Audit investigators trace account-level decisions.
 
-Led **15+ additional remediation workstreams**, including Tier 1 servicemember benefits and disaster relief. Coordinated dependencies across business and control partners, brought recommendations to senior Decision Forums, and documented resolved strategic differences in Risks, Issues, and Decision logs. Strengthened delivery through peer review, mentoring, knowledge-base articles and training. Requirements and validation evidence connected source/attribute suitability and impact-period coverage to inclusion, exclusion and redress calculations.
+Led **15+ additional remediation workstreams**, including Tier 1 servicemember benefits and disaster relief. Compared treatment alternatives, presented recommendations to senior Decision Forums, and documented resolved strategic differences in Risks, Issues, and Decision logs; carried approved decisions into execution. Coordinated business and control partners and strengthened delivery through peer review, mentoring, knowledge-base guidance and training. Validated source/attribute suitability and impact-period coverage; documented QA for population inclusion, exclusion and redress calculations.
+
+Installed governance protecting favorable credit reporting against later overwrites. In a separate furnishing strategy, challenged overbroad execution, preserved customer protections and reduced cost by **~$60K per submission**, carrying the approach through governance and department-wide training.
 
 **Office of the Comptroller of the Currency:** supported 16 Credit Risk Analysis Division economists in credit-risk research and bank examination/stress-testing work, including DFAST. Engineered longitudinal bureau data and pricing inputs for economist-led research on long-term auto-loan risk and pricing; developed and tested CECL/lifetime-PD approaches; independently recalculated and validated evidence. Delivered Tableau views and explanations to support investigation and review. Research contributions were acknowledged in the *Journal of Credit Risk* and an OCC working paper. Research support is distinct from final model, publication or supervisory ownership.
 
@@ -214,7 +222,7 @@ The recurring thread is practical: **make the data usable, challenge the method,
 
 ## How I work
 
-**Build:** SAS · SQL/Teradata · Python; PostgreSQL and Power BI/Power Query/DAX in the public portfolio.  
+**Build and review:** SAS · SQL/Teradata · Python · Tableau; professional Power BI report use and validation. Independent portfolio development adds PostgreSQL and Power BI/Power Query/DAX.  
 **Challenge:** source and output reconciliation · benchmark/challenger comparisons · sensitivity analysis · model diagnostics.  
 **Deliver:** requirements and code · usable analytical views · executive interpretation · documented operating handoffs.
 
