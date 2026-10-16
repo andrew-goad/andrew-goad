@@ -10,6 +10,8 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 [LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
+**Explore Tableau:** [Open the live risk dashboard][msbf-tableau-live] · [Matched-scenario investigation](#msbf-tableau)
+
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
 
 <a name="leadership-method"></a>
@@ -55,15 +57,34 @@ I turned my résumé-refinement and application-preparation workflow into a reus
 <a name="featured-work"></a>
 ## Featured analytical products
 
-*Independent, synthetic, non-production demonstrations. Screenshots open in the browser; the linked Power BI files open in Power BI Desktop—not as hosted live dashboards.*
+*Independent, synthetic, non-production demonstrations. The Tableau dashboard is interactive in the browser; the linked Power BI files open in Power BI Desktop—not as hosted live dashboards. Screenshots and reports are available for both.*
 
 <a name="msbf"></a>
 ### Merchant Sales-Based Financing (MSBF) · Merchant Credit Intelligence
 
 **What financing can a merchant support, why, and what happens after funding?**  
-PostgreSQL · Python · Power BI
+PostgreSQL · Python · Tableau · Power BI
 
 I designed and published a demonstration of merchant financing repaid through a fixed share of daily sales, connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
+
+<a name="msbf-tableau"></a>
+#### Tableau: compare the scenarios—investigate the decision
+
+**[Open the interactive Tableau dashboard][msbf-tableau-live] · [Read the Tableau case study][msbf-tableau-guide] · [Browse the 13-page carousel][msbf-tableau-carousel]**
+
+I built **Risk Decision & Scenario Review** to compare the same **750 synthetic merchant-financing applications** under Baseline and Recession Energy. **236 applications (31.5%)** have different final decision categories; **103 are authorized in Baseline and 27 under stress**. The dashboard connects **portfolio interpretation → decision pairing → segment concentration → individual evidence**.
+
+[![Tableau Merchant Credit Intelligence: 750 matched applications, 236 different decisions, Baseline and stress authorization indicators, an interactive decision-pairing matrix, segment sensitivity and source-backed application narratives.][msbf-tableau-overview-image]][msbf-tableau-live]
+
+*Tableau portfolio overview from the approved carousel. Click the image to explore the live dashboard, or [open the image at full resolution][msbf-tableau-overview].*
+
+Industry and acquisition-source filters define the portfolio. A matrix selection identifies the applications behind a decision pairing; the segment view switches between **portfolio authorization rates** and **within-segment pairing incidence**, retaining the full filtered segment denominator. Selecting a merchant changes its paired explanations without redefining the portfolio totals.
+
+The **Decision / Evidence / Structure / Source rationale** selector makes the supporting facts and financing assessment inspectable. [Merchant 098][msbf-tableau-counteroffer] retains authorization through a smaller stress counteroffer; [merchant 258][msbf-tableau-exposure] retains a review category while its proposed amount changes. The narrative explains what a status alone would miss.
+
+**Tableau implementation:** aggregate measures, parameter-driven grouping and narratives, filter and parameter actions, dynamic zone visibility, and controlled comparison denominators.
+
+*Alternative synthetic scenarios—not sequential account histories or forecasts. Review is not authorization; authorization does not establish funding. Proposed amounts are not actual funded exposure. Technical source rationale is labeled separately from final governed outcomes. [Viewing and evidence notes][msbf-tableau-notes].*
 
 <a name="msbf-power-bi"></a>
 #### Power BI: explain the decision—and follow the account
@@ -222,7 +243,7 @@ The recurring thread is practical: **make the data usable, challenge the method,
 
 ## How I work
 
-**Build and review:** SAS · SQL/Teradata · Python · Tableau; professional Power BI report use and validation. Independent portfolio development adds PostgreSQL and Power BI/Power Query/DAX.  
+**Build and review:** SAS · SQL/Teradata · Python · Tableau; professional Power BI report use and validation. Independent portfolio development includes PostgreSQL, Power BI/Power Query/DAX and interactive Tableau scenario review.  
 **Challenge:** source and output reconciliation · benchmark/challenger comparisons · sensitivity analysis · model diagnostics.  
 **Deliver:** requirements and code · usable analytical views · executive interpretation · documented operating handoffs.
 
@@ -230,7 +251,7 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 
 **Let’s connect about senior analytics, credit strategy, decision systems and analytical product leadership.** [LinkedIn][linkedin] · [All repositories][github]
 
-<!-- Direct proof artifacts are pinned to the reviewed source editions; project links open the repository front doors. -->
+<!-- Existing proof artifacts remain pinned to their reviewed source editions. New Tableau companion artifacts follow the published MSBF main branch; the live dashboard uses Tableau Public. Project links open repository front doors. -->
 
 [msbf]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator
 [cds]: https://github.com/andrew-goad/credit_decisioning_strategy
@@ -290,3 +311,13 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 [hitl-method]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_33_Reusable_Method.png
 [hitl-method-image]: https://raw.githubusercontent.com/andrew-goad/andrew-goad/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_33_Reusable_Method.png
 [hitl-reconcile]: https://github.com/andrew-goad/andrew-goad/blob/03cbea711f1b3d06ce1b77599286eb700dedb313/Human_in_the_Loop_Analytical_Leadership/HITL_Page_28_Verify_and_Reconcile.png
+
+
+[msbf-tableau-live]: https://public.tableau.com/app/profile/andrew.goad/viz/MCI_Risk_Decision_Scenario_Review/RiskDecisionScenarioReview
+[msbf-tableau-guide]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/README.md
+[msbf-tableau-carousel]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel.pdf
+[msbf-tableau-overview]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/01_portfolio_overview.png
+[msbf-tableau-overview-image]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/01_portfolio_overview.png
+[msbf-tableau-counteroffer]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/07_merchant098_authorized_counteroffer.png
+[msbf-tableau-exposure]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/08_merchant258_proposed_exposure_sensitivity.png
+[msbf-tableau-notes]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/WORKBOOK_AND_EVIDENCE_NOTES.md
