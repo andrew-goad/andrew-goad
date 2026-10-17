@@ -1,10 +1,10 @@
 # Andrew R. Goad
 
-**Senior Analytics & Applied Data Science Leader · Decision Systems · Consumer Credit · AI-Enabled Delivery**
+**Senior Analytics & Applied Data Science Leader · Enterprise Data Strategy · Consumer Credit & Risk · Analytical Product Development**
 
 **I build analytical products around the people who use them: what they need to understand and what they need to do next. I lead that work by setting clear priorities and helping colleagues deliver with confidence.**
 
-My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I developed and owned Collateral Protection Insurance (CPI) and other Consumer Auto remediation analytics representing $1B+ in exposure and customer impact, connecting recurring production and regulatory response to customer outcomes. This independent, synthetic, non-production portfolio makes my current work in credit strategy, analytical engineering, statistical modeling and business-facing decision intelligence available to inspect.
+My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and the U.S. Census Bureau. At Wells Fargo, I developed and owned Collateral Protection Insurance (CPI) and other Consumer Auto remediation analytics representing $1B+ in exposure and customer impact, connecting recurring production and regulatory response to customer outcomes. In this independent, synthetic, non-production portfolio, I develop analytical products that connect business requirements, data and decision logic, validation, and business-facing interpretation.
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
@@ -28,7 +28,7 @@ Using Merchant Sales-Based Financing as the case, I coordinated specialized repo
 *Original instruction from the case study: context supplied, execution delegated, judgment retained. [Open the instruction at full resolution][hitl-mandate].*
 
 - **Prepare the work for substantial execution.** Bring requirements and evidence across workstreams, agree on direction, and define when consequential decisions must return for human judgment.
-- **Keep questioning after acceptance.** Challenge an accepted rule, investigate behavior that does not make business sense, and propose a mechanism the evidence can test.
+- **Keep questioning after initial project acceptance.** Challenge an accepted rule, investigate behavior that does not make business sense, and propose a mechanism the evidence can test.
 - **Verify the change and teach the method.** Reconcile both the intended correction and the facts that should remain unchanged, obtain separate challenge, and make the reasoning usable by another person.
 
 *Independent, synthetic, non-production case. The conversations were human-coordinated and did not communicate autonomously. Separate AI-assisted project review is not external professional assurance.*
@@ -137,7 +137,7 @@ P01 connects funding sources, decision categories, industry economics and accoun
 **How do policy choices—and changes to the analytical foundation—alter a credit decision?**  
 PostgreSQL · SAS reconciliation · Power BI
 
-I built a configurable consumer-credit strategy environment with adjustable population size, product/score mix, selected product bounds, policy thresholds and counteroffer settings. I executed **39 runs of 50,000 synthetic applications each: 1.95 million decision evaluations**, not 1.95 million unique borrowers. Source-consistent comparisons within appropriate scenario groups expose access, affordability, exposure and review/decline tradeoffs.
+I built a five-product synthetic bank application portfolio and configurable credit-strategy engine, with adjustable population size, product/score mix, selected product bounds, policy thresholds and counteroffer settings. I executed **39 runs of 50,000 synthetic applications each: 1.95 million decision evaluations**, not 1.95 million unique borrowers. Source-consistent comparisons within appropriate scenario groups expose access, affordability, exposure and review/decline tradeoffs.
 
 The synthetic foundation also evolved through four Module 1 workstreams: **mortgage realism, risk-proxy dispersion, scenario design and revolving-payment sensitivity**. For example, revolving-payment estimates were revised so that APR changes affect payment burden—making the synthetic foundation more useful for strategy testing.
 
