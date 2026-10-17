@@ -8,7 +8,7 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
-[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Tableau:** [Open the live risk dashboard][msbf-tableau-live] · [Matched-scenario investigation](#msbf-tableau)
 
@@ -238,6 +238,8 @@ Installed governance protecting favorable credit reporting against later overwri
 The recurring thread is practical: **make the data usable, challenge the method, explain the result and preserve the next person's ability to act on it.**
 
 **Professional recommendations:** [Read letters from 11 colleagues](Andrew_R_Goad_Recommendation_Letters.pdf) on analytical rigor, delivery, partnership and mentoring. Reference contact details available upon request.
+
+**Performance record:** [Review six annual ratings and selected manager feedback](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf), including Exceeds ratings in 2020, 2022 and 2025 and comments on analytical judgment, credit-reporting expertise, delivery and mentoring.
 
 **Entrepreneurial experience · Pittsburgh #GoadLife:** I launched a Pittsburgh short-term rental in March 2025, generating $70K+ in gross bookings as of September 2026. I have maintained [Airbnb Superhost](https://airbnb.com/h/pittsburgh-goadlife) and [Vrbo Premier Host](https://www.vrbo.com/4496537) recognition continuously since September 2025. I manage the property remotely, coordinating local housekeeping, landscaping and maintenance vendors, and use AI to assist with guest feedback, supply reorders, pricing and accounting.
 
