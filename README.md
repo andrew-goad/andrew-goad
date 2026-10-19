@@ -8,14 +8,16 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
-[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [Leadership case study](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [AI leadership](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Tableau:** [Open the live risk dashboard][msbf-tableau-live] · [Matched-scenario investigation](#msbf-tableau)
 
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
 
 <a name="leadership-method"></a>
-## Human-in-the-Loop Analytical Leadership
+## Applied AI Leadership
+
+### Human-in-the-Loop Analytical Leadership
 
 **A case study in directing cross-functional, task-specific AI workstreams.**
 
@@ -45,6 +47,23 @@ Using Merchant Sales-Based Financing as the case, I coordinated specialized repo
 </details>
 
 **Do not stop at the output. Challenge the reasoning. Teach the method.**
+
+<a name="chat-continuity"></a>
+### When the Chat Ends, the Work Continues
+
+**Use established AI context to challenge the successor—and verify the corrections.**
+
+My Credit Decisioning Strategy Simulator already had two Module 1 releases and **251 pages of business requirements and validation documentation** when I opened the Module 2 build chat. I used **two experienced chats to refine the handoff and audit the new builder’s first 13 build responses**, then reconciled their advice, issued instructions, and checked whether the changes landed.
+
+One late review caught a missing requirement that ensured policy comparisons used the same underlying data. I restored it before full-script assembly.
+
+**[Read the full case study · 26 pages][chat-continuity-report] · [Follow all 13 audits in the original chats][cds-handoff-guide]**
+
+[![When the Chat Ends, the Work Continues: Andrew R. Goad's case study on preserving project knowledge through a human-directed AI handoff and 13 response audits.][chat-continuity-cover]][chat-continuity-report]
+
+**Final release evidence, after execution QA and corrections:** **39 runs / 1.95 million synthetic decision rows**, **20 matched comparisons with zero source-field mismatches**, and **10 of 10 final readiness gates passed**. [Inspect the controls and campaign evidence][chat-continuity-results].
+
+[See a correction verified][chat-continuity-correction] · [Reuse the handoff method][chat-continuity-method] · [Browse the CDS chat history][cds-chat-history]
 
 ### Practical playbook: How to Use AI to Streamline Your Job Search
 
@@ -165,7 +184,7 @@ The report reconciles **50,000 matched applications**, distinguishing **21,326 a
 
 </details>
 
-[Explore CDS][cds] · [Campaign run evidence][cds-campaign] · [Module 1 workstreams][cds-workstreams] · [Validation summary][cds-validation] · [System architecture][cds-architecture]
+[Explore CDS][cds] · [Campaign run evidence][cds-campaign] · [Module 1 workstreams][cds-workstreams] · [Validation summary][cds-validation] · [System architecture][cds-architecture] · [Development conversations][cds-chat-history]
 
 ---
 
@@ -253,7 +272,7 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 
 **Let’s connect about senior analytics, credit strategy, decision systems and analytical product leadership.** [LinkedIn][linkedin] · [All repositories][github]
 
-<!-- Existing proof artifacts remain pinned to their reviewed source editions. New Tableau companion artifacts follow the published MSBF main branch; the live dashboard uses Tableau Public. Project links open repository front doors. -->
+<!-- Existing proof artifacts remain pinned to their reviewed source editions. New Tableau companion artifacts follow the published MSBF main branch; the live dashboard uses Tableau Public. The chat-continuity case study and CDS conversation archive follow their published main branches. Project links open repository front doors. -->
 
 [msbf]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator
 [cds]: https://github.com/andrew-goad/credit_decisioning_strategy
@@ -323,3 +342,11 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 [msbf-tableau-counteroffer]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/07_merchant098_authorized_counteroffer.png
 [msbf-tableau-exposure]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/MCI_Risk_Decision_Scenario_Review_Carousel_PNGs/08_merchant258_proposed_exposure_sensitivity.png
 [msbf-tableau-notes]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/blob/main/docs/tableau/docs/WORKBOOK_AND_EVIDENCE_NOTES.md
+
+[chat-continuity-report]: When_the_Chat_Ends_the_Work_Continues/When_the_Chat_Ends_Case_Study.pdf
+[chat-continuity-cover]: When_the_Chat_Ends_the_Work_Continues/Chat_Continuity_Page_01_Cover.png
+[chat-continuity-correction]: When_the_Chat_Ends_the_Work_Continues/Chat_Continuity_Page_17_Verify_the_Correction.png
+[chat-continuity-method]: When_the_Chat_Ends_the_Work_Continues/Chat_Continuity_Page_24_Reusable_Method.png
+[chat-continuity-results]: When_the_Chat_Ends_the_Work_Continues/Chat_Continuity_Page_25_Controls_and_Campaign_Evidence.png
+[cds-handoff-guide]: https://github.com/andrew-goad/credit_decisioning_strategy/blob/main/Chat_History/HANDOFF_READING_GUIDE.md
+[cds-chat-history]: https://github.com/andrew-goad/credit_decisioning_strategy/tree/main/Chat_History
