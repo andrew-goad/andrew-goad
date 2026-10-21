@@ -23,9 +23,7 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 Using Merchant Sales-Based Financing as the case, I coordinated specialized reporting, remediation/build and separate review conversations while retaining responsibility for business decisions. The report shows the original interactions, the questions that redirected the work, and the evidence used to verify the results.
 
-**[Read the full case study · 35 pages][hitl-report] · [Browse the LinkedIn carousel · 13 pages][hitl-carousel]**
-
-**[Explore the original conversations and HITL evidence guide](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/project_history)**
+**[Read the full case study · 35 pages][hitl-report] · [Browse the LinkedIn carousel · 13 pages][hitl-carousel] · [Explore the original conversations and HITL evidence guide](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/project_history)**
 
 [![Agree on direction. Delegate the work. Retain judgment. Original human instruction authorizing substantial AI-assisted execution after context and strategy were established, with key decisions reserved for human judgment.][hitl-mandate-image]][hitl-report]
 
