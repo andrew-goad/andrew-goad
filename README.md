@@ -25,6 +25,8 @@ Using Merchant Sales-Based Financing as the case, I coordinated specialized repo
 
 **[Read the full case study · 35 pages][hitl-report] · [Browse the LinkedIn carousel · 13 pages][hitl-carousel]**
 
+**[Explore the original conversations and HITL evidence guide](https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/project_history)**
+
 [![Agree on direction. Delegate the work. Retain judgment. Original human instruction authorizing substantial AI-assisted execution after context and strategy were established, with key decisions reserved for human judgment.][hitl-mandate-image]][hitl-report]
 
 *Original instruction from the case study: context supplied, execution delegated, judgment retained. [Open the instruction at full resolution][hitl-mandate].*
