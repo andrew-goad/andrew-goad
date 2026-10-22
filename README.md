@@ -25,7 +25,7 @@ I follow a portfolio question into a merchant's financing decision, then through
 
 Power BI and Tableau present the **same SQL decision logic**. Tableau adds a **side-by-side comparison of Baseline and Recession Energy stress**, while Power BI connects portfolio context, the individual decision and the account journey.
 
-**[Watch or download the video · 3:48][msbf-presentation-video] · [Chapters, transcript and captions][msbf-presentation]**
+**[Watch on LinkedIn · 3:48][msbf-presentation-linkedin] · [Download the video][msbf-presentation-video] · [Chapters, transcript and captions][msbf-presentation]**
 
 <a name="leadership-method"></a>
 ## Applied AI Leadership
@@ -291,6 +291,7 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 
 [msbf]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator
 [msbf-presentation]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/presentation
+[msbf-presentation-linkedin]: https://www.linkedin.com/posts/andrewrgoad_dataanalytics-businessintelligence-creditrisk-ugcPost-7519010138268020736-C2Fh
 [msbf-presentation-video]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/b34fbc1c35a743628b6ae5018ad08a174d536137/docs/presentation/Merchant_Credit_Intelligence.mp4
 [msbf-presentation-cover]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/b34fbc1c35a743628b6ae5018ad08a174d536137/docs/presentation/assets/MCI_Opening_Card.png
 [cds]: https://github.com/andrew-goad/credit_decisioning_strategy
