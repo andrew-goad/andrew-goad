@@ -8,7 +8,7 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
-[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [Video walkthrough](#mci-presentation) · [AI leadership](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [AI leadership](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Tableau:** [Open the live risk dashboard][msbf-tableau-live] · [Matched-scenario investigation](#msbf-tableau)
 
