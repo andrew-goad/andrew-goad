@@ -8,11 +8,24 @@ My 16+ years span Wells Fargo, the Office of the Comptroller of the Currency and
 
 > **No Cold Handoffs:** Logic, Controls, Validation, Evidence, and Interpretation travel together.
 
-[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [AI leadership](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
+[LinkedIn][linkedin] · [Résumé](Andrew_R_Goad_Senior_Analytics_Applied_Data_Science_Resume.pdf) · [Recommendations](Andrew_R_Goad_Recommendation_Letters.pdf) · [Performance record](https://github.com/andrew-goad/andrew-goad/blob/main/Andrew_R_Goad_Performance_Review_Summary.pdf) · [Video walkthrough](#mci-presentation) · [AI leadership](#leadership-method) · [Featured products](#featured-work) · [Domain tools](#domain-tools) · [Professional foundation](#professional-foundation)
 
 **Explore Tableau:** [Open the live risk dashboard][msbf-tableau-live] · [Matched-scenario investigation](#msbf-tableau)
 
 **Explore Power BI:** [Merchant decisions and account journeys](#msbf-power-bi) · [Version validation and application-level change](#cds-power-bi)
+
+<a name="mci-presentation"></a>
+## Watch the work: Merchant Credit Intelligence
+
+**A 3:48 narrated walkthrough of the Merchant Sales-Based Financing Strategy Simulator (MSBF).**
+
+[![Merchant Credit Intelligence narrated presentation by Andrew R. Goad: compare Baseline and Recession Energy scenarios, explain financing decisions, and follow the merchant account through repayment and servicing.][msbf-presentation-cover]][msbf-presentation]
+
+I follow a portfolio question into a merchant's financing decision, then through repayment and servicing. I explain what those decisions mean for the merchant's business and the bank's portfolio.
+
+Power BI and Tableau present the **same SQL decision logic**. Tableau adds a **side-by-side comparison of Baseline and Recession Energy stress**, while Power BI connects portfolio context, the individual decision and the account journey.
+
+**[Watch or download the video · 3:48][msbf-presentation-video] · [Chapters, transcript and captions][msbf-presentation]**
 
 <a name="leadership-method"></a>
 ## Applied AI Leadership
@@ -85,6 +98,8 @@ I turned my résumé-refinement and application-preparation workflow into a reus
 PostgreSQL · Python · Tableau · Power BI
 
 I designed and published a demonstration of merchant financing repaid through a fixed share of daily sales, connecting acquisition, sales and settlement, liquidity, obligations and cash-flow capacity to product economics, financing terms and the funded-account lifecycle. Strong sales alone do not establish capacity; finding supportable terms does not automatically confer approval.
+
+**[Watch the narrated portfolio-to-account walkthrough · 3:48][msbf-presentation]**
 
 <a name="msbf-tableau"></a>
 #### Tableau: compare the scenarios—investigate the decision
@@ -272,9 +287,12 @@ I use AI to accelerate implementation, testing, documentation and iteration whil
 
 **Let’s connect about senior analytics, credit strategy, decision systems and analytical product leadership.** [LinkedIn][linkedin] · [All repositories][github]
 
-<!-- Existing proof artifacts remain pinned to their reviewed source editions. New Tableau companion artifacts follow the published MSBF main branch; the live dashboard uses Tableau Public. The chat-continuity case study and CDS conversation archive follow their published main branches. Project links open repository front doors. -->
+<!-- Existing proof artifacts remain pinned to their reviewed source editions. New Tableau companion artifacts follow the published MSBF main branch; the live dashboard uses Tableau Public. The chat-continuity case study and CDS conversation archive follow their published main branches. The narrated presentation video and cover are pinned to the approved published edition; its viewing guide follows MSBF main. Project links open repository front doors. -->
 
 [msbf]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator
+[msbf-presentation]: https://github.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/tree/main/docs/presentation
+[msbf-presentation-video]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/b34fbc1c35a743628b6ae5018ad08a174d536137/docs/presentation/Merchant_Credit_Intelligence.mp4
+[msbf-presentation-cover]: https://raw.githubusercontent.com/andrew-goad/merchant-sales-based-financing-strategy-simulator/b34fbc1c35a743628b6ae5018ad08a174d536137/docs/presentation/assets/MCI_Opening_Card.png
 [cds]: https://github.com/andrew-goad/credit_decisioning_strategy
 [ssf]: https://github.com/andrew-goad/survival-strategy-framework
 [err]: https://github.com/andrew-goad/enterprise-reconciliation-reporting
